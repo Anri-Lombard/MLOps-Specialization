@@ -114,5 +114,38 @@ Data augmentation is often used in the context of image classification and objec
 
 Overall, data augmentation is a useful technique for increasing the size and diversity of a dataset, which can help to improve the performance of machine learning models.
 
+__Experiment Tracking__
+
+Experiment tracking is the process of keeping track of the different experiments that you run in your machine learning development and the results that they produce. This can be useful for several reasons, including:
+
+- Comparing the results of different experiments to see which approach worked best
+- Identifying trends and patterns in your results, which can help you improve your models over time
+- Reproducing your experiments in the future, for example, to confirm your results or to share your work with others
+
+
+To track your experiments effectively, it's important to track the following information:
+
+- The details of your experiments, including the code that you used, the hyperparameters that you chose, and the results that you obtained
+- The specific changes that you made to your code and your model so that you can easily reproduce your experiments in the future
+- The inputs and outputs of your experiments, including the datasets that you used, the models that you trained, and the predictions that they made
+- Any additional information that might be relevant to your experiments, such as the hardware that you used, the runtime that your experiments took, and any notes or observations that you made
+
+
+There are a few different tools that you can use to track your experiments, including:
+
+- Machine learning frameworks or platforms that provide built-in support for experiment tracking, such as TensorFlow or PyTorch
+- Dedicated experiment tracking tools, such as Weights & Biases or Comet.ml, can help you organize and analyze your experiments
+- Version control systems, such as Git, can help you track the code and other artifacts associated with your experiments
+
+
+When choosing a tool to track your experiments, you should look for the following features:
+
+- Automated logging of experiment details, including code, hyperparameters, and results
+Visualization and analysis capabilities, such as graphs, charts, and tables, to help you understand your results
+- Integration with other tools, such as machine learning frameworks and version control systems, to make it easy to use
+- Collaboration and sharing features, such as the ability to share your experiments with others, or to work on them together
+- Scalability and flexibility, support a large number of experiments and accommodate different types of data and models.
+
+### Week 3: Data Definition and Baseline
 
 __IN PROGRESS__
