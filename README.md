@@ -148,4 +148,25 @@ Visualization and analysis capabilities, such as graphs, charts, and tables, to 
 
 ### Week 3: Data Definition and Baseline
 
+__Unstructured and Structured Data__
+Unstructured data is data that does not have a pre-defined structure or format, making it difficult to process and analyze using traditional data management tools. Examples of unstructured data include text documents, audio and video files, and social media posts. In contrast, structured data is data that is organized into a pre-defined format or schema, making it easier to process and analyze. Examples of structured data include database records, spreadsheets, and CSV files.
+
+In general, humans are better at labeling unstructured data than structured data, as unstructured data often contains more complex and nuanced information that is difficult for machines to understand. For example, a human might be able to accurately label the sentiment of a written review, but a machine might struggle to do so. On the other hand, structured data is often easier for machines to process, as it is organized in a way that is more predictable and consistent. This can make it easier for machines to automatically label and analyze structured data.
+
+__Small Data and Big Data__
+
+Small data and big data are terms used to describe the size and complexity of data sets. Small data sets are relatively small and can be easily managed and analyzed using standard data management and analysis tools, while big data sets are so large and complex that they require specialized tools and techniques in order to be processed and analyzed effectively. The main difference between small data and big data is the size and complexity of the data sets involved, which can affect how the data is managed and analyzed. Small data sets are more manageable and easier to analyze, while big data sets require specialized tools and techniques to process and analyze effectively.
+
+__Label Consistency__
+
+Label consistency in machine learning refers to the idea that the labels assigned to data points should be consistent and correct in order for the machine learning model to be effective. This means that the labels should be accurately applied to the data, and should not be conflicting or inconsistent in any way. Ensuring label consistency is important because if the labels are incorrect or inconsistent, the machine learning model will not be able to learn effectively and will not be able to make accurate predictions. This can lead to poor performance and potentially even incorrect or harmful decisions made by the model.
+
+__Human Level Performance__
+
+![Human Level Performance](./Images/hlp.jpeg)
+
+HLP, or human-level performance, refers to the ability of a machine-learning model to perform at the same level as a human. This is often considered the ultimate goal of many machine learning projects, as achieving human-level performance would mean that the model can perform tasks that require human-like intelligence and reasoning. To achieve HLP, machine learning models typically require a large amount of high-quality training data and powerful computational resources. Additionally, the development process often involves iterative testing and refining of the model to improve its performance.
+
+Although, as Andrew mentioned, it is not necessary to achieve HLP to build a useful machine-learning model.
+
 __IN PROGRESS__
