@@ -68,8 +68,51 @@ Model maintenance is the process of keeping a machine learning model up to date 
 
 __Modeling__
 
-In machine learning, the ultimate goal is to develop a model that not only performs well on the test set, but also solves the business problem at hand. This is because the purpose of machine learning is to develop models that can be used to make predictions or take actions in real-world situations. If a model only performs well on the test set but does not solve the business problem, it is not useful in practice and will not provide any value to the business. Therefore, it is important to choose a model that not only performs well on the test set, but also has the ability to solve the business problem and provide value in real-world situations.
+In machine learning, the ultimate goal is to develop a model that not only performs well on the test set but also solves the business problem at hand. This is because the purpose of machine learning is to develop models that can be used to make predictions or take actions in real-world situations. If a model only performs well on the test set but does not solve the business problem, it is not useful in practice and will not provide any value to the business. Therefore, it is important to choose a model that not only performs well on the test set but also can solve a business problem and provide value in real-world situations.
 
+__Baseline__
+
+Measuring human-level performance is crucial when comparing a machine-learning model to a human benchmark because it enables us to see how well the model is performing compared to a known standard. This helps us identify areas where the model is outperforming or underperforming compared to human performance and guides us in determining where to focus our attention and efforts. By comparing the model to human-level performance, we can gain a better understanding of the model's capabilities and limitations, and determine whether it is achieving the desired level of accuracy and performance.
+
+__Precision, Recall, and F1__
+
+In a machine-learning context, precision and recall are two metrics that are used to evaluate the performance of a classifier. Precision is a measure of the fraction of correct positive predictions, and is calculated using the formula:
+
+    Precision = True Positives / (True Positives + False Positives)
+
+Recall, on the other hand, is a measure of the fraction of positive cases that are correctly predicted, and is calculated using the formula:
+
+    Recall = True Positives / (True Positives + False Negatives)
+
+In other words, precision is a measure of the accuracy of the classifier's positive predictions, while recall is a measure of its ability to identify all of the positive cases in the data. Together, these two metrics can provide a more complete picture of a classifier's performance than either one alone
+
+The F1 score is a measure that combines precision and recall into a single metric. It is calculated using the harmonic mean of precision and recall, which is defined as:
+    
+    F1 = 2 * (Precision * Recall) / (Precision + Recall)
+
+The F1 score is a useful metric because it takes into account both the classifier's precision and recall, and provides a balance between the two. It is particularly useful in cases where you want to avoid either under-prediction or over-prediction of the positive class. For example, in a medical diagnostic setting, a high F1 score would indicate that the classifier has both high precision (i.e. it makes very few false positive predictions) and high recall (i.e. it correctly identifies most of the positive cases).
+
+__Data-centric vs. Model-centric__
+
+The terms data-centric and model-centric refer to two different approaches to AI development. Data-centric AI development focuses on the data that is used to train and evaluate the performance of machine learning models. This approach emphasizes the importance of using large, diverse, and high-quality datasets to train and evaluate machine learning models.
+
+On the other hand, model-centric AI development focuses on machine-learning algorithms and models themselves. This approach emphasizes the importance of developing novel, state-of-the-art machine learning algorithms and models and using them to make predictions or decisions based on data.
+
+One advantage of data-centric AI development is that it allows for the use of large, diverse, and high-quality datasets to train and evaluate machine learning models. This can help to improve the accuracy and reliability of the predictions or decisions made by the models, as well as to reduce the risk of bias or overfitting.
+
+Another advantage of data-centric AI development is that it allows for the use of transfer learning, which is a technique that enables machine learning models to be trained on a large dataset and then fine-tuned on a smaller, specialized dataset. This can save time and resources, and allow for the development of more effective and efficient machine-learning models.
+
+Overall, data-centric AI development can be more advantageous than model-centric AI development because it allows for the use of large, diverse, and high-quality datasets to train and evaluate machine learning models, which can improve the accuracy and reliability of the predictions or decisions made by the models.
+
+__Data Augmentation__
+
+Data augmentation is a technique used to artificially increase the size of a dataset by generating additional data points based on the existing data. This is typically done by applying various transformations to the existing data, such as rotating, scaling, or cropping images, or by adding random noise or perturbations to the data.
+
+The goal of data augmentation is to improve the performance of machine learning models by providing them with more diverse and robust training data. This can help to reduce overfitting, improve generalization, and make the models more robust to changes in the data distribution.
+
+Data augmentation is often used in the context of image classification and object detection, where it can be used to generate additional training data by applying various transformations to the existing images. This can help to improve the performance of the models by making them more robust to changes in the orientation, scale, or lighting of the images.
+
+Overall, data augmentation is a useful technique for increasing the size and diversity of a dataset, which can help to improve the performance of machine learning models.
 
 
 __IN PROGRESS__
