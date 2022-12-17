@@ -169,4 +169,64 @@ HLP, or human-level performance, refers to the ability of a machine-learning mod
 
 Although, as Andrew mentioned, it is not necessary to achieve HLP to build a useful machine-learning model.
 
+__Meta-data, Data Provenance, and Data Lineage__
+
+Meta-data is information that describes other data. It can include things like the date a file was created, the author of the file, and keywords that describe the contents of the file.
+
+Data provenance is the record of where data comes from. It can include things like the source of the data, the process by which it was collected, and any transformations or modifications that have been made to the data.
+
+Data lineage is the history of data, including its origins, where it has been stored and processed, and how it has been transformed over time. Data lineage is often used to trace the origins of data and to ensure its integrity and accuracy.
+
+Together, these concepts are important for understanding the origins and quality of data, which is essential for making decisions and taking actions based on that data.
+
+__Scoping__
+
+Scoping in machine learning development is the process of defining the goals, boundaries, and constraints of a machine learning project to ensure that the model being developed is well-suited to solving the intended problem.
+
+Process:
+1. Ask about business problems, not AI problems.
+2. Brainstorm AI solutions.
+3. Assess the feasibility and value of the potential solutions.
+4. Determine milestones.
+5. Budget for resources.
+
+## Course 2: Machine Learning Data Lifecycle in Production
+### Week 1: Collecting, Labeling, and Validating Data
+
+__Collecting Data__
+
+There are several advantages to collecting data in machine learning production:
+1. Increased accuracy: One of the main advantages of collecting data in machine learning production is that it allows you to improve the accuracy of your models. As you collect more data, you can train your models on a larger and more diverse set of examples, which can help them generalize better to new cases.
+2. Improved performance: In addition to improving accuracy, collecting data in machine learning production can also help improve the performance of your models. For example, if you are working on a recommendation system, collecting data on user interactions and preferences can help you improve the relevance and quality of your recommendations.
+3. Better decision-making: By collecting data in machine learning production, you can gain insights into how your models are performing in the real world and use this information to make informed decisions about how to improve your system.
+
+However, there are also some disadvantages to collecting data in machine learning production:
+1. Data privacy concerns: One of the main concerns with collecting data in machine learning production is the potential for data privacy violations. It is important to have robust policies in place to protect the privacy of the individuals whose data you are collecting and to be transparent about how you are using the data.
+2. Cost: Collecting data can be expensive, particularly if you need to purchase data from third-party sources. This can be a significant disadvantage for companies with limited budgets.
+3. Bias: Another potential issue with collecting data in machine learning production is the potential for bias. If the data you are collecting is not representative of the population you are trying to model, your models may be biased and produce inaccurate results. It is important to be aware of this and take steps to ensure that your data is representative and unbiased.
+
+__Labeling Data__
+
+There are several advantages to labeling data in machine learning production:
+1. Improved model accuracy: One of the main advantages of labeling data in machine learning production is that it allows you to improve the accuracy of your models. By providing explicit labels for the data, you can train your models to accurately classify or predict outcomes for new cases.
+2. Increased understanding: Labelling data can also help you gain a better understanding of the data you are working with. By explicitly assigning labels to data points, you can identify patterns and trends that may not be immediately apparent otherwise.
+3. Enhanced decision-making: By labeling data, you can also improve your ability to make informed decisions about how to use your data. For example, if you are working on a natural language processing task, labeling data can help you identify specific words or phrases that are important for your task.
+
+However, there are also some disadvantages to labeling data in machine learning production:
+1. Time and cost: Labelling data can be a time-consuming and costly process, particularly if you have a large dataset. This can be a significant disadvantage for companies with limited budgets or resources.
+2. Human error: Another potential issue with labeling data is the potential for human error. If the data is not labeled accurately, it can negatively impact the performance of your models. It is important to have processes in place to ensure the accuracy of your labels.
+3. Limited generalizability: Finally, it is important to keep in mind that labeled data is only representative of the specific cases it includes. Your models may not generalize well to new cases that are not included in the labeled data. This can be a significant disadvantage if you are working on tasks that require your models to generalize to a wide range of cases.
+
+__Validating data__
+
+There are several advantages to validating data in machine learning production:
+1. Improved model accuracy: One of the main advantages of validating data in machine learning production is that it allows you to improve the accuracy of your models. By testing your models on unseen data, you can ensure that they are not overfitting to the training data and can generalize well to new cases.
+2. Enhanced decision-making: Validating data can also help you make informed decisions about how to use your data. For example, if you are working on a classification task, you can use validation data to determine the optimal threshold for classifying cases as positive or negative.
+3. Increased confidence in results: By validating your models on unseen data, you can increase your confidence in the results they produce. This can be particularly important when you are using your models to make decisions with real-world consequences, such as in medical or financial applications.
+
+However, there are also some disadvantages to validating data in machine learning production:
+1. Time and cost: Validating data can be a time-consuming and costly process, particularly if you have a large dataset. This can be a significant disadvantage for companies with limited budgets or resources.
+2. Limited generalizability: It is also important to keep in mind that validation data is only representative of a specific subset of your overall dataset. Your models may not generalize well to new cases that are not included in the validation data.
+3. Human error: Finally, there is a potential for human error when selecting and preparing validation data. If the data is not representative of the population you are trying to model, or if there are errors in the labels or features, it can negatively impact the performance of your models. It is important to have processes in place to ensure the accuracy and representativeness of your validation data.
+
 __IN PROGRESS__
