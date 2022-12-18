@@ -229,4 +229,25 @@ However, there are also some disadvantages to validating data in machine learnin
 2. Limited generalizability: It is also important to keep in mind that validation data is only representative of a specific subset of your overall dataset. Your models may not generalize well to new cases that are not included in the validation data.
 3. Human error: Finally, there is a potential for human error when selecting and preparing validation data. If the data is not representative of the population you are trying to model, or if there are errors in the labels or features, it can negatively impact the performance of your models. It is important to have processes in place to ensure the accuracy and representativeness of your validation data.
 
+#### Week 2: Feature Engineering, Transformation, and Selection
+
+__Feature Engineering__
+
+Feature engineering is the process of creating and selecting features to use in a machine-learning model to improve model performance.
+
+__Preprocessing__
+
+Preprocessing in machine learning refers to the steps taken to prepare data for use in a machine learning model. Preprocessing usually involves cleaning and formatting the data in a way that is suitable for training the model, as well as selecting and extracting features from the data that are most relevant to the task at hand.
+
+Many different preprocessing techniques can be used, depending on the nature of the data and the specific requirements of the machine learning task. Some common preprocessing steps include:
+
+1. Handling missing or incomplete data: This may involve imputing missing values, or dropping rows or columns with too many missing values.
+2. Handling outliers: Outliers can hurt the performance of some machine learning algorithms, so it may be necessary to identify and either remove or transform these data points.
+3. Feature scaling: Some machine learning algorithms are sensitive to the scale of the input features, so it may be necessary to scale the features to a common range (e.g., 0-1).
+4. Feature selection: In many cases, the raw data will contain many features that are not relevant or useful for the task at hand. Feature selection involves identifying and selecting the most relevant features for training the model.
+5. Data transformation: This may involve applying transformations such as log transformations or normalization to the data to make it more suitable for use with certain machine learning algorithms.
+
+Preprocessing is an important step in the machine learning process, as it can significantly impact the performance and accuracy of the trained model. It is important to carefully consider which preprocessing steps are appropriate for the specific data and task at hand.
+
+
 __IN PROGRESS__
