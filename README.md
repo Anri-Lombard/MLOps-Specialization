@@ -3,6 +3,13 @@
 ## Description
 I am fascinated by what goes into building and deploying models such as ChatGPT and Github Copilot, which are not only successful but have improved my life immeasurably. This repository follows along with the MLOps Specialization in Coursera to learn from the world's best how to build and deploy models in production.
 
+## Tips on learning
+It could be quite boring and difficult to learn online when there are no teachers or students to push you, especially doing an advanced course like this. Here are some tips that I found useful:
+1. Set a tiny goal, such as completing one week. Forget about the rest since it is too overwhelming.
+2. When listening to the lecture, try picturing what is being taught. This makes it more fun and helps retention, and can be done whether you take notes or not.
+
+Over time the tiny goals add up to completion and the imagery will result in surprising recollection of the material.
+
 ## Course structure
 1. Introduction to Machine Learning in Production
 2. Machine Learning Data Lifecycle in Production
@@ -290,5 +297,19 @@ It is important to note that feature selection is an iterative process and may i
 
 Some methods used are:
 ![Selection methods](Images/Selection%20methods.png)
+
+#### Week 3: Data Journey and Data Storage
+
+__Data Journey__
+
+![Data Journey](Images/Data%20Journey.png)
+
+__Data Provenance/Lineage__
+
+Data provenance in machine learning refers to the process of tracking the origin and processing of data used in machine learning models. It involves keeping a record of the data sources, data transformations and preprocessing steps, and any other relevant information about the data to understand its quality and characteristics, which can significantly affect the performance of a machine learning model. Data provenance is important in situations where the results of a machine learning model are being used for decision-making or other critical applications, as it provides a clear understanding of the data that was used to generate the model's predictions and the process by which the model was trained and evaluated. Tools such as data lineage tools and data dictionaries can be used to track and document data provenance.
+
+__Metadata__
+
+Machine learning metadata refers to the data about the data that is used in machine learning models. It includes information such as the data sources, data preprocessing steps, feature engineering techniques, and any other relevant information about the data. Machine learning metadata is important for understanding the characteristics and quality of the data that is being used to train and evaluate a machine learning model. It can also be useful for reproducing the results of a machine learning model, as it provides a record of the data and techniques that were used to generate the model. Machine learning metadata can be tracked using tools such as data dictionaries and data lineage tools.
 
 __IN PROGRESS__
