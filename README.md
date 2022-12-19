@@ -249,5 +249,46 @@ Many different preprocessing techniques can be used, depending on the nature of 
 
 Preprocessing is an important step in the machine learning process, as it can significantly impact the performance and accuracy of the trained model. It is important to carefully consider which preprocessing steps are appropriate for the specific data and task at hand.
 
+__Feature Transformations at Scale__
+
+![Feature Transformations](Images/Transformations.png)
+
+__Analyzers Framework__
+
+![Analyzers Framework](Images/Analyzers%20framework.png)
+
+__tf.Transform__
+
+```python
+import tensorflow as tf
+import tensorflow_transform as tft
+
+def preprocess_fn(inputs):
+  # Preprocessing logic goes here
+  return transformed_features
+
+data, info = tfds.load('hello_world', split='train', with_info=True)
+preprocessed_data = data.map(preprocess_fn)
+
+for features in preprocessed_data:
+  print(features)
+```
+
+__Feature Selection__
+
+Feature selection is the process of selecting a subset of relevant features for use in model construction. It is a crucial step in the process of building a machine learning model, as the performance of the model can depend heavily on the chosen features.
+
+There are several reasons why feature selection is important:
+
+1. Reducing Overfitting: Including too many features in a model can lead to overfitting, where the model becomes too complex and is not able to generalize well to new data. Feature selection can help to mitigate this by selecting only the most relevant features, which can improve the model's ability to generalize.
+2. Improving model interpretability: A model with a smaller number of features is often easier to interpret and understand. This can be especially important in applications where the model's decisions need to be explainable to stakeholders.
+3. Improving model efficiency: Using a smaller number of features can also make the model more efficient, as it requires fewer computations to make predictions. This can be especially important in situations where the model needs to make real-time predictions or where there is a large volume of data.
+
+There are several methods for performing feature selection, including filtering, wrapper methods, and embedded methods. Filtering methods involve ranking features based on some statistical measure of their relevance and selecting the top-ranked features. Wrapper methods involve using a search algorithm to iteratively select and evaluate subsets of features. Embedded methods involve training a model with all features and then using the trained model to identify the most important features.
+
+It is important to note that feature selection is an iterative process and may involve trying multiple methods and comparing the results to determine the optimal set of features for a given problem.
+
+Some methods used are:
+![Selection methods](Images/Selection%20methods.png)
 
 __IN PROGRESS__
