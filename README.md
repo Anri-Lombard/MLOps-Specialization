@@ -320,6 +320,21 @@ __Data Warehouse__
 
 In machine learning, a data warehouse is a centralized repository for storing and managing large amounts of structured data that is used for reporting and data analysis. Data warehouses are designed to support the efficient querying and analysis of data and are typically optimized for fast query performance through the use of specialized indexing and query optimization techniques. Data warehouses can be used to store data from a variety of sources, including transactional databases, log files, and streaming data, and can support both batch and real-time data ingestion and processing. Data warehouses are often used in machine learning as a source of historical data for training and evaluating machine learning models, as well as for storing and querying the results of machine learning predictions in production.
 
+#### Week 4: Advanced Labeling, Augmentation, and Data Preprocessing
+
+__Active Learning__
+
+Active learning is a machine learning technique in which a learning algorithm is able to interactively query the user (or some other information source) to obtain the desired outputs at new data points. This interaction can be used to improve the performance of the algorithm by allowing it to focus on the most important or uncertain data points. Active learning is particularly useful when labeled training data is scarce or expensive to obtain, as it allows the algorithm to learn from a smaller amount of labeled data by actively selecting the most informative data points to label. Active learning can be applied to a variety of learning tasks, including supervised learning, semi-supervised learning, and reinforcement learning. It is often used in applications where it is important to minimize the amount of human effort required to label data, such as in natural language processing and computer vision.
+
+__Weak Supervision__
+
+Weak supervision is a machine-learning approach that relies on incomplete or noisy labels for training data. It is often used when there is not enough annotated data available to train a model using traditional supervised learning techniques. Weak supervision allows models to be trained using noisy or partially labeled data by using techniques such as distant supervision, bootstrapping, and self-training. These techniques can be used to generate additional labels or to improve the quality of the existing labels, enabling the model to learn even in the absence of complete supervision. Weak supervision can be especially useful in scenarios where it is difficult or time-consuming to collect and annotate large amounts of data, such as in natural language processing or computer vision tasks.
+
+Snorkel is an open-source software toolkit that is designed to make it easier to use weak supervision techniques in machine learning. It provides a framework for training machine learning models using incomplete or noisy labels, and is particularly useful for tasks such as natural language processing and computer vision.
+
+In Snorkel, users define a set of labeling functions, which are heuristics or rules that can be used to generate labels for the training data. These labeling functions may be based on domain knowledge, patterns in the data, or any other information that can be used to generate labels. The outputs of the labeling functions are then combined using probabilistic models to produce a set of "weak" labels for the training data. These weak labels can then be used to train a machine-learning model using traditional supervised learning techniques.
+
+Snorkel also provides several tools for managing the process of weak supervision, including tools for evaluating the performance of the labeling functions, for managing the training and deployment of machine learning models, and for analyzing the results of the weak supervision process.
 
 
 __IN PROGRESS__
