@@ -362,5 +362,50 @@ Several strategies can be used to reduce the cost of AutoML, specifically in the
 
 By using these strategies, it is possible to reduce the cost of AutoML and improve the efficiency of the model development process.
 
+### Week 2: Model Resource Management Techniques
+
+__Dimensionality Reduction__
+
+The curse of dimensionality refers to the phenomenon in machine learning where the performance of a model decreases as the number of dimensions in the input data increases. This is because as the number of dimensions increases, the volume of the input space increases exponentially, leading to a sparsity of data points and a corresponding increase in the generalization error of the model. The curse of dimensionality can be particularly problematic in cases where the input space is high-dimensional and the training data is limited, as the model may struggle to learn meaningful patterns in the data. To mitigate the effects of the curse of dimensionality, it is often necessary to use techniques such as feature selection or dimensionality reduction to reduce the number of dimensions in the input data.
+
+The Hughes effect, also known as the Hughes phenomenon or the no free lunch theorem, refers to the phenomenon in machine learning where increasing the number of features in a model can actually degrade its performance. This is because as the number of features increases, the model may begin to overfit to the training data, leading to poor generalization to new data. The Hughes effect is particularly problematic in cases where the number of features is significantly larger than the number of training examples, as the model may have difficulty learning meaningful patterns in the data. To mitigate the effects of the Hughes effect, it is often necessary to use techniques such as feature selection or regularization to reduce the number of features in the model.
+
+__Principal Component Analysis__
+
+Principal component analysis (PCA) is a statistical technique that is used to reduce the dimensionality of a dataset by finding a set of uncorrelated variables, called principal components, that capture the most variance in the data. It is often used as a data preprocessing step in machine learning to reduce the number of features and remove redundancy, making it easier to model and interpret the data. It can also be used for data visualization by projecting the data onto a lower-dimensional space. PCA is useful for a wide range of applications and is particularly useful for high-dimensional datasets with correlated variables.
+
+Singular value decomposition (SVD) is a mathematical technique that decomposes a matrix into the product of three matrices: a left singular matrix, a diagonal matrix of singular values, and a right singular matrix. SVD is a generalization of eigenvalue decomposition, which is used to decompose a matrix into the product of a matrix and its inverse. SVD is used in a wide range of applications, including data compression, image processing, and natural language processing. It is also a key tool in the development of recommendation systems, as it can be used to decompose a matrix representing user-item interactions into a matrix of user preferences and a matrix of item characteristics.
+
+__Quantization and Pruning__
+
+Quantization is the process of representing a large set of data with a smaller set of discrete values. In machine learning, quantization is often used to reduce the size and complexity of models, which can make them faster to run and easier to store.
+
+There are several benefits to quantization in machine learning:
+
+1. Reduced model size: Quantizing a model can significantly reduce its size, which can be beneficial when the model needs to be transmitted or stored.
+2. Improved performance: Quantized models can often run faster than their non-quantized counterparts because they require fewer calculations. This can be especially beneficial on devices with limited computational resources, such as mobile phones or embedded systems.
+3. Enhanced energy efficiency: Quantized models can also be more energy efficient because they require fewer calculations, which can be beneficial when running the model on devices with limited power resources.
+
+To quantize a machine learning model, the following steps are typically followed:
+
+1. Train a full precision model: The first step is to train a full precision model using standard machine learning techniques.
+2. Determine the range of activations and weights: The next step is to determine the range of values for the activations and weights in the model. This is often done by analyzing a representative sample of the data.
+3. Quantize the activations and weights: Once the range of values has been determined, the activations and weights can be quantized to a smaller set of discrete values. This can be done by using a quantization function that maps the full precision values to the quantized values.
+4. Fine-tune the quantized model: Finally, the quantized model may need to be fine-tuned to ensure that it performs as well as the full precision model. This can be done by training the model using a reduced learning rate and possibly other techniques such as weight decay.
+
+__Quantization-aware training__
+
+Quantization-aware training (QAT) is a technique used to train machine learning models that are intended to be quantized after training. In other words, QAT is a way of training a model so that it performs well when it is quantized to a smaller set of discrete values, rather than being left in full precision.
+
+The main difference between QAT and standard training is that QAT takes into account the quantization process during training. This is done by adding quantization functions to the model and applying them to the activations and weights during training. This allows the model to learn to work well with quantized values, rather than just being quantized after it has been trained.
+
+QAT can be beneficial when training models that will be deployed on devices with limited computational resources, such as mobile phones or embedded systems. By training the model to work well with quantized values, it can be made smaller and faster to run, which can be important for these types of devices.
+
+__Pruning__
+
+Pruning is a technique used to reduce the size and complexity of a machine-learning model by removing unnecessary parameters or connections. The goal of pruning is to remove elements of the model that do not contribute significantly to its performance, while still maintaining its accuracy. Pruning can be used to reduce the size of a model, which can make it faster to run and easier to store. It can also be used to improve the generalization ability of a model, by removing overfitting elements. Pruning can be applied to a variety of model architectures, such as neural networks, decision trees, and support vector machines. There are several techniques for pruning a machine learning model, including weight pruning, neuron pruning, and filter pruning.
+
+
+
 
 __IN PROGRESS__
