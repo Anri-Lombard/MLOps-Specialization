@@ -236,7 +236,7 @@ However, there are also some disadvantages to validating data in machine learnin
 2. Limited generalizability: It is also important to keep in mind that validation data is only representative of a specific subset of your overall dataset. Your models may not generalize well to new cases that are not included in the validation data.
 3. Human error: Finally, there is a potential for human error when selecting and preparing validation data. If the data is not representative of the population you are trying to model, or if there are errors in the labels or features, it can negatively impact the performance of your models. It is important to have processes in place to ensure the accuracy and representativeness of your validation data.
 
-#### Week 2: Feature Engineering, Transformation, and Selection
+### Week 2: Feature Engineering, Transformation, and Selection
 
 __Feature Engineering__
 
@@ -298,7 +298,7 @@ It is important to note that feature selection is an iterative process and may i
 Some methods used are:
 ![Selection methods](Images/Selection%20methods.png)
 
-#### Week 3: Data Journey and Data Storage
+### Week 3: Data Journey and Data Storage
 
 __Data Journey__
 
@@ -320,7 +320,7 @@ __Data Warehouse__
 
 In machine learning, a data warehouse is a centralized repository for storing and managing large amounts of structured data that is used for reporting and data analysis. Data warehouses are designed to support the efficient querying and analysis of data and are typically optimized for fast query performance through the use of specialized indexing and query optimization techniques. Data warehouses can be used to store data from a variety of sources, including transactional databases, log files, and streaming data, and can support both batch and real-time data ingestion and processing. Data warehouses are often used in machine learning as a source of historical data for training and evaluating machine learning models, as well as for storing and querying the results of machine learning predictions in production.
 
-#### Week 4: Advanced Labeling, Augmentation, and Data Preprocessing
+### Week 4: Advanced Labeling, Augmentation, and Data Preprocessing
 
 __Active Learning__
 
@@ -335,6 +335,32 @@ Snorkel is an open-source software toolkit that is designed to make it easier to
 In Snorkel, users define a set of labeling functions, which are heuristics or rules that can be used to generate labels for the training data. These labeling functions may be based on domain knowledge, patterns in the data, or any other information that can be used to generate labels. The outputs of the labeling functions are then combined using probabilistic models to produce a set of "weak" labels for the training data. These weak labels can then be used to train a machine-learning model using traditional supervised learning techniques.
 
 Snorkel also provides several tools for managing the process of weak supervision, including tools for evaluating the performance of the labeling functions, for managing the training and deployment of machine learning models, and for analyzing the results of the weak supervision process.
+
+## Course 3: Machine Learning Modeling Pipelines in Production
+
+### Week 1: Neural Architecture Search
+
+__AutoML__
+
+AutoML is a set of techniques and tools that aim to automate the process of designing, training, and optimizing machine learning models. It involves using algorithms and software tools to search through a large space of possible model architectures, hyperparameter settings, and other design choices, to find the combination that yields the best performance on a given task. AutoML can be applied to a wide range of machine learning tasks, including supervised learning, unsupervised learning, and reinforcement learning. It can be particularly useful for data scientists and machine learning practitioners who want to quickly and efficiently find good models for their tasks, or for organizations that want to build machine learning systems with minimal human intervention.
+
+__Search Strategies__
+
+1. Grid Search
+2. Random Search
+3. Bayesian Optimization
+4. Evolutionary Algorithms
+5. Reinforcement Learning
+
+__Strategies to reduce cost__
+
+Several strategies can be used to reduce the cost of AutoML, specifically in the areas of lower fidelity estimates, learning curve estimation, and weight inheritance/network morphisms.
+
+1. Lower fidelity estimates: One strategy to reduce the cost of AutoML is to use lower fidelity estimates of the model's performance. This can involve using simpler models or smaller training datasets to estimate the model's performance, which can reduce the computational cost of training and evaluating the model.
+2. Learning curve estimation: Another strategy to reduce the cost of AutoML is to use learning curve estimation to identify the optimal training dataset size for a given model. This can involve training the model on increasingly larger datasets and measuring the performance improvement, to determine the point of diminishing returns. By identifying this point, it is possible to select a dataset size that maximizes performance while minimizing cost.
+3. Weight inheritance/network morphisms: Weight inheritance and network morphisms involve transferring knowledge from previously trained models to new models, to reduce the cost of training. This can be done by using the weights of a pre-trained model as the starting point for training a new model, or by using network morphisms to modify the architecture of a pre-trained model to adapt it to a new task.
+
+By using these strategies, it is possible to reduce the cost of AutoML and improve the efficiency of the model development process.
 
 
 __IN PROGRESS__
