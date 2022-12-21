@@ -405,7 +405,37 @@ __Pruning__
 
 Pruning is a technique used to reduce the size and complexity of a machine-learning model by removing unnecessary parameters or connections. The goal of pruning is to remove elements of the model that do not contribute significantly to its performance, while still maintaining its accuracy. Pruning can be used to reduce the size of a model, which can make it faster to run and easier to store. It can also be used to improve the generalization ability of a model, by removing overfitting elements. Pruning can be applied to a variety of model architectures, such as neural networks, decision trees, and support vector machines. There are several techniques for pruning a machine learning model, including weight pruning, neuron pruning, and filter pruning.
 
+### Week 3: High-Performance Model
 
+__Distributed Training__
+
+Distributed training is a method of training machine learning models on multiple machines, possibly with multiple GPUs on each machine. It is often used to train very large models that cannot fit on a single machine, or to train models faster by utilizing the additional computational resources provided by multiple machines.
+
+There are several ways to perform distributed training, including data parallelism and model parallelism. In data parallelism, the model is replicated on each machine, and each replica is trained on a different subset of the training data. The gradients from each replica are then averaged and used to update the model parameters. In model parallelism, different parts of the model are trained on different machines, with the model parameters being communicated between the machines as needed.
+
+Distributed training can be challenging to set up and can require special tools and libraries to manage the communication between the different machines and GPUs. However, it can significantly improve the speed and scalability of model training, making it an important technique in high-performance machine learning.
+
+__Knowledge Distillation__
+
+In machine learning, knowledge distillation is a technique for training a smaller, more efficient model (called the student model) to perform similarly to a larger, less efficient model (called the teacher model). The student model is trained to mimic the output of the teacher model, which is typically trained on a larger dataset. There are several ways to perform knowledge distillation, such as using the outputs of the teacher model as the target labels for training the student model, or using the intermediate activations of the teacher model as features for training the student model. The goal of knowledge distillation is to improve the efficiency and performance of the student model by transferring knowledge from the teacher model.
+
+__KL Divergence__
+
+Kullback-Leibler divergence, or KL divergence for short, is a measure of the difference between two probability distributions. It is often used in machine learning to compare the performance of different models or to evaluate the fit of a model to a dataset.
+
+KL divergence is defined as the difference between the expected log-likelihood of the data under one distribution (called the true distribution) and the expected log-likelihood of the data under another distribution (called the approximating distribution). In other words, it measures how closely the approximating distribution approximates the true distribution.
+
+KL divergence is non-negative and is equal to zero if and only if the two distributions are identical. This means that the KL divergence between two distributions can be used as a measure of the similarity between them.
+
+KL divergence is often used in machine learning as a loss function or in model evaluation. It is particularly useful for comparing the fit of different models to a dataset, or for evaluating the performance of a model on a held-out test set.
+
+__DistilBERT__
+
+DistilBERT is a small, fast, and lightweight version of the popular BERT language model developed by Hugging Face. It was trained using knowledge distillation, a technique for training a smaller, more efficient model (called the student model) to perform similarly to a larger, less efficient model (called the teacher model).
+
+DistilBERT is about 40% smaller and faster than BERT, making it more suitable for deployment in resource-constrained environments, such as on mobile devices or in edge computing applications. Despite its smaller size and faster inference speed, DistilBERT can maintain a similar level of performance to BERT on a wide range of natural language processing tasks, including language translation, question answering, and text classification.
+
+DistilBERT is trained on the same dataset as BERT, and is designed to preserve the most important information and patterns learned by the larger model while reducing the number of parameters and computational requirements. This makes it a good choice for applications that require high performance and efficiency.
 
 
 __IN PROGRESS__
