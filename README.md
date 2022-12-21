@@ -437,5 +437,73 @@ DistilBERT is about 40% smaller and faster than BERT, making it more suitable fo
 
 DistilBERT is trained on the same dataset as BERT, and is designed to preserve the most important information and patterns learned by the larger model while reducing the number of parameters and computational requirements. This makes it a good choice for applications that require high performance and efficiency.
 
+### Week 4: Model Analysis
+
+__Model performance analysis__
+
+Model performance analysis is a crucial step in the machine learning process that involves evaluating the accuracy and effectiveness of a model on a given dataset. This helps to identify any weaknesses or issues with the model and guide the development of more effective models. Various metrics can be used to assess model performance, depending on the type of problem being solved and the characteristics of the dataset. It is also important to visualize the results to get a better understanding of how the model is performing and identify any trends or patterns in the data. Overall, model performance analysis is an essential part of the machine learning process that helps to ensure that the model can make accurate and reliable predictions on new, unseen data.
+
+__Black box vs white box__
+
+Black box evaluation and white box evaluation are two approaches to evaluating the performance of a machine learning model.
+
+Black box evaluation involves evaluating the model based on its predictions or outputs, without attempting to understand the internal workings of the model. This is typically done using metrics such as accuracy, precision, and recall, which measure the model's ability to make correct predictions on new, unseen data. Black box evaluation is useful for determining the overall effectiveness of a model, but does not provide any insight into how the model is making its predictions.
+
+White box evaluation, on the other hand, involves examining the internal structure and processes of the model to understand how it is making its predictions. This can be done through techniques such as feature importance analysis, which measures the impact of each input feature on the model's predictions, or by examining the model's decision boundaries or rule sets. White box evaluation can provide valuable insights into the model's behavior and can help identify any issues or biases in the model.
+
+__Model debugging__
+
+Model debugging is the process of identifying and addressing issues with a machine-learning model that is not performing as expected. There are several techniques that can be used to debug a model, including:
+
+1. Benchmarking the model: This involves comparing the performance of the model to a simple, baseline model or to a reference model that is known to perform well on the same task. This can help identify any issues with the model and provide a baseline for comparison.
+2. Sensitivity analysis: This involves systematically changing the input data or the model parameters and observing how the model's performance changes. This can help identify any issues with the model or any input features that are particularly important for the model's performance.
+3. Partial dependence plots: These plots show the relationship between a single input feature and the model's predictions, while holding all other input features constant. This can help identify any issues with the model or any input features that are particularly important for the model's performance.
+
+Overall, these techniques can help identify and address issues with a machine-learning model that is not performing as expected. It is important to carefully evaluate the model's performance and identify any potential issues in order to improve its accuracy and reliability.
+
+__Harms__
+
+Machine learning models have the potential to cause some harms, both to individuals and to society as a whole. Some potential harms that can arise from the use of machine learning models include:
+
+1. Informational harms: These harms occur when a machine learning model makes incorrect or biased decisions that result in harm to individuals. For example, a model that is used to make hiring decisions may discriminate against certain groups of people based on their race or gender.
+2. Behavioral harms: These harms occur when a machine learning model influences the behavior of individuals in negative ways. For example, a model that is used to recommend products to users based on their past purchases may influence their behavior and lead them to make more impulsive or unhealthy purchasing decisions.
+
+It is important to carefully consider the potential harms that may arise from the use of machine learning models and take steps to mitigate them. This can include carefully evaluating the training data to ensure that it is representative and unbiased, as well as regularly monitoring the model's performance to ensure that it is not causing any negative impacts.
+
+__Remediation techniques__
+
+There are a number of techniques that can be used to address issues or harms caused by machine learning models. Some of these techniques include:
+
+1. Model editing: This involves making changes to the model itself in order to address any issues or biases that may be present. This can include modifying the model's architecture, changing the training data, or adjusting the model's hyperparameters.
+2. Model assertions: These are statements that are included in the model's code that specify certain conditions or constraints that the model should satisfy. If these conditions are not met, the model will produce an error or warning message, allowing the developer to identify and address any issues.
+3. Data preprocessing: This involves cleaning and preparing the training data in order to ensure that it is representative and unbiased. This can include techniques such as removing outliers, normalizing the data, and handling missing values.
+4. Fairness metrics: These are metrics that are used to evaluate the fairness of a machine learning model, such as accuracy, precision, and recall. By tracking these metrics over time, it is possible to identify any potential issues or biases in the model and take steps to address them.
+
+__Data drift, concept drift, and concept emergence__
+
+In machine learning, data drift, concept drift, and concept emergence refer to changes that can occur in the data or the underlying concept that a model is trying to learn. These changes can have a significant impact on the performance of a machine-learning model and can lead to the model becoming less accurate over time.
+
+1. Data drift: This occurs when the distribution of the data that the model is trained on changes over time. For example, if a model is trained on a dataset that includes customer demographics and purchase history, and the demographics or purchasing habits of the customers change over time, the model may become less accurate.
+2. Concept drift: This occurs when the concept or task that the model is trying to learn changes over time. For example, if a model is trained to classify images of cats and dogs, and the concept of what constitutes a cat or a dog changes over time (e.g., due to changes in breed popularity), the model may become less accurate.
+3. Concept emergence: This occurs when a new concept or task emerges that the model was not designed to handle. For example, if a model is trained to classify images of animals, and a new type of animal is introduced that the model has never seen before, the model may not be able to accurately classify the new animal.
+
+__Monitoring techniques__
+
+Supervised techniques and unsupervised techniques are two types of machine learning techniques that are used to analyze data and identify patterns and trends.
+
+Supervised techniques involve training a model on labeled data, where the data includes both input features and corresponding target outputs. The model learns to map the input features to the target outputs by finding patterns in the training data. Some common supervised techniques include:
+
+1. Statistical process control: This technique involves using statistical methods to monitor and control a process in order to ensure that it is operating within specified limits.
+2. Sequential analysis: This technique involves analyzing data in a sequential manner, using statistical techniques to identify trends and patterns over time.
+3. Error distribution modeling: This technique involves modeling the distribution of errors made by a model in order to identify any issues or biases that may be present.
+
+Unsupervised techniques, on the other hand, do not require labeled data and are used to identify patterns and relationships in the data on their own. Some common unsupervised techniques include:
+
+1. Clustering: This technique involves grouping data points into clusters based on their similarity.
+2. Novelty detection: This technique involves identifying data points that are significantly different from the rest of the data and may represent novel or unusual events.
+3. Feature distribution monitoring: This technique involves monitoring the distribution of input features in order to identify any changes or trends that may be present.
+4. Model-dependent monitoring: This technique involves monitoring the performance of a machine learning model over time and using this information to identify any changes or trends that may be present.
+
+
 
 __IN PROGRESS__
