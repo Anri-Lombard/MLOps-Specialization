@@ -506,6 +506,53 @@ Unsupervised techniques, on the other hand, do not require labeled data and are 
 
 ### Week 5: Interpretability
 
+__Explainable AI__
+
+Explainable AI, also known as interpretable AI or transparent AI, refers to artificial intelligence systems that can provide an explanation of their predictions, decisions, and actions to humans. This includes not only the reasoning behind the output of the AI system, but also the input data and the internal processes used to generate the output.
+
+Explainable AI is important because it helps humans understand and trust AI systems, especially when the systems are used to make important decisions that affect people's lives. For example, an explainable AI system used in a medical context could provide doctors with a clear explanation of how it arrived at a diagnosis or treatment recommendation, allowing the doctors to understand the basis for the recommendation and make informed decisions about the patient's care.
+
+In addition, explainable AI can help identify and mitigate bias in AI systems, as it allows for the examination of the data and algorithms used to make predictions. Without explainability, it may be difficult to determine the sources of bias in an AI system and take steps to address it.
+
+__Responsible AI__
+
+Responsible AI refers to the development and use of artificial intelligence systems that are designed and implemented in a way that is ethical, transparent, and accountable. It involves considering the potential impacts of AI on society and individuals, and taking steps to ensure that these impacts are positive and beneficial.
+
+Responsible AI includes a number of principles and practices, such as ensuring that AI systems are transparent and explainable, protecting against bias and discrimination, respecting privacy and data protection, and considering the broader societal and ethical implications of AI. It also involves ongoing monitoring and evaluation of AI systems to ensure that they continue to operate in a responsible manner.
+
+The development and deployment of responsible AI is important because AI systems can have significant consequences for individuals and society, and it is crucial that they are developed and used in a way that is ethical and beneficial. Responsible AI can help to build trust in AI and ensure that it is used for the benefit of all stakeholders.
+
+__Model Interpretation Techniques__
+
+Model interpretation techniques refer to methods for understanding and explaining the inner workings of machine learning models and their predictions. There are several different ways to classify interpretation techniques, including by the timing of their application (intrinsic vs. post-hoc), the scope of their explanation (local vs. global), and the type of model they are applied to (model-specific vs. model-agnostic).
+
+Intrinsic interpretation techniques are those that are built into the model during the training process, while post-hoc techniques are applied after the model has been trained. Intrinsic techniques may be more efficient and accurate, as they are designed specifically for the model being used, but post-hoc techniques can be applied to any model and may be more flexible.
+
+Model-specific interpretation techniques are designed to work with a particular type of model, such as a decision tree or a neural network, while model-agnostic techniques can be applied to any type of model. Model-agnostic techniques may be more flexible, but they may also be less accurate or efficient than model-specific techniques.
+
+Local interpretation techniques provide explanations for specific predictions or decisions made by the model, while global interpretation techniques provide a broad overview of the model's behavior. Local techniques may be more useful for understanding the reasoning behind specific predictions, while global techniques may be more useful for understanding the overall behavior of the model.
+
+__SHAP__
+
+The Shapley value is a concept from game theory that provides a way to fairly distribute the total value of a game among its players. In the context of machine learning, the Shapley value can be used to explain the contribution of each feature to a model's prediction for a particular instance.
+
+The Shapley value can be calculated using a formula that takes into account the marginal contribution of each feature, as well as the interaction between features. The resulting Shapley values represent the average marginal contribution of each feature, over all possible combinations of feature values.
+
+SHAP (SHapley Additive exPlanations) is a framework for calculating the Shapley values for a machine learning model. SHAP uses the Shapley value concept to provide feature importance scores that can be used to explain the prediction of a model for a specific instance.
+
+SHAP values have several desirable properties, including consistency with the model's predictions and the ability to capture both main effects and interactions between features. SHAP values can also be used to identify the most important features for a particular prediction and to compare the importance of features across different predictions.
+
+__LIME__
+
+LIME (Local Interpretable Model-agnostic Explanations) is a model interpretation technique that provides explanations for the predictions of any machine learning model, by approximating the behavior of the model locally around a specific instance.
+
+LIME works by generating synthetic data samples that are similar to the instance being explained, and then fitting a simple, interpretable model to those samples. The simple model is used to approximate the behavior of the complex model in the local region around the instance, and the coefficients of the simple model are used to provide explanations for the complex model's prediction.
+
+LIME is model-agnostic, meaning that it can be used to explain the predictions of any machine learning model, regardless of the model's type or architecture. It is also local, meaning that it provides explanations for a specific prediction, rather than the model as a whole.
+
+LIME is a useful tool for understanding the behavior of complex machine learning models, particularly in situations where the model is not fully transparent or interpretable. It can be used to identify the features that are most important for a particular prediction, and to understand how those features contribute to the prediction.
+
+## Course 4: Deploying Machine Learning Models in Production
 
 
 __IN PROGRESS__
