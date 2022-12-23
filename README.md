@@ -616,6 +616,52 @@ There are a number of different deployment options that can be used for model se
 
 The specific deployment option chosen will depend on the requirements of the project and the trade-offs that are acceptable. Organizations will need to consider factors like the scale of the model, the resources required to serve it, and the requirements of the application or system in which it will be used when deciding on the best deployment option.
 
+### Week 2: Model Serving Patterns and Infrastructure
+
+__Container Orchestration__
+
+Container orchestration is the process of managing and coordinating multiple containers, typically in a cluster of machines. In the context of machine learning model production, container orchestration can be used to manage the deployment and scaling of machine learning models, as well as the underlying infrastructure and resources needed to support them.
+
+Some common container orchestration tools include Kubernetes, Docker Swarm, and Apache Mesos. These tools allow you to define and deploy your machine learning models as containers, and then manage them as a group, ensuring that they are deployed consistently and efficiently across your infrastructure.
+
+There are several benefits to using container orchestration in machine learning model production:
+
+1. Scalability: Container orchestration tools make it easy to scale your machine learning models up or down based on demand, allowing you to effectively manage resources and ensure that your models are always available and performing optimally.
+2. Reliability: Container orchestration tools can help you ensure that your machine learning models are highly available, even in the event of failures or outages. They can automatically recover from failures and ensure that your models are always running.
+3. Portability: Containers allow you to package your machine learning models and their dependencies in a self-contained unit that can be easily deployed on any infrastructure. This makes it easier to deploy your models in different environments and ensures that they will run consistently across different platforms.
+4. Collaboration: Container orchestration tools allow multiple developers to work on the same machine learning models and infrastructure, making it easier to collaborate and deploy changes.
+
+Overall, container orchestration can be a valuable tool for managing machine learning models in production, allowing you to deploy and scale your models efficiently and reliably.
+
+__Inference Optimization__
+
+Inference optimization refers to the process of improving the performance of a machine learning model during the inference stage, when the model is being used to make predictions on new data. There are several ways to optimize inference, including optimizing the model infrastructure, the model architecture, and the model compilation.
+
+1. Model infrastructure: The infrastructure used to run the model can have a significant impact on inference performance. For example, using hardware accelerator such as a Graphics Processing Unit (GPU) can significantly improve the speed of inference, especially for models that are designed to take advantage of GPU acceleration. Additionally, optimizing the network infrastructure, such as the connection speed and latency, can also improve inference performance.
+2. Model architecture: The architecture of the model itself can also impact inference performance. Some common techniques for optimizing model architecture include pruning and quantization. Pruning involves removing unnecessary connections or weights from the model to reduce its size and complexity, while quantization involves reducing the precision of the model's weights and activations to reduce the amount of memory and computational resources required.
+3. Model compilation: The process of compiling a model can also impact its performance during inference. For example, optimizing the compilation flags or using just-in-time (JIT) compilation can help improve the performance of the model.
+
+__Data Preprocessing__
+
+Data preprocessing refers to the process of preparing raw data for use in a machine learning model. It involves a number of steps that are designed to improve the quality and usability of the data, and to make it more suitable for training a model. Some common steps in data preprocessing include:
+
+1. Data cleansing: This involves identifying and correcting errors or inconsistencies in the data, such as missing values or incorrect data types. It is an important step in ensuring that the data is accurate and usable for training a machine learning model.
+2. Feature tuning: This involves selecting the most relevant and useful features from the data for use in the model. It can involve removing unnecessary or redundant features, or creating new features by combining or transforming existing ones.
+3. Feature construction: This involves creating new features from raw data, either by extracting them from the data directly or by combining existing features in new ways. Feature construction can be used to add additional information or context to the data that may be useful for training a machine learning model.
+4. Representation transformation: This involves transforming the data into a different representation that is more suitable for training a machine learning model. For example, text data may need to be converted into numerical vectors using techniques such as tokenization and embedding.
+5. Feature selection: This involves selecting a subset of the most relevant and useful features from the data for use in the model. It can be used to reduce the complexity of the model and improve its performance by removing unnecessary or redundant features.
+
+__ETL Pipelines__
+
+ETL stands for Extract, Transform, and Load. An ETL pipeline is a set of processes that extracts data from one or more sources, transforms it into a format suitable for downstream analysis or machine learning, and loads it into a target destination, such as a data warehouse, database, or machine learning model.
+
+The extract phase involves extracting data from one or more sources, such as databases, files, or APIs. The data is typically extracted in its raw form and may need to be cleaned and transformed before it is ready for use.
+
+The transform phase involves applying a series of transformations to the data in order to make it more suitable for downstream analysis or machine learning. This can include cleaning the data, selecting relevant features, applying feature engineering techniques, and converting the data into a suitable format.
+
+The load phase involves loading the transformed data into a target destination, such as a data warehouse, database, or machine learning model. The data may be loaded in batch mode, where it is loaded periodically at fixed intervals, or in real-time, where it is loaded as soon as it is available.
+
+ETL pipelines are commonly used in data analytics and machine learning to extract, transform, and load large volumes of data from various sources, making it easier to analyze and use the data for business intelligence or model training purposes. They can be implemented using a variety of tools and technologies, such as Apache Spark, Python, and SQL.
 
 
 __IN PROGRESS__
