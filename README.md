@@ -663,5 +663,10 @@ The load phase involves loading the transformed data into a target destination, 
 
 ETL pipelines are commonly used in data analytics and machine learning to extract, transform, and load large volumes of data from various sources, making it easier to analyze and use the data for business intelligence or model training purposes. They can be implemented using a variety of tools and technologies, such as Apache Spark, Python, and SQL.
 
+### Week 3: Model Management and Delivery
+
+__MLOps__
+
+![MLOps cycle](Images/MLOps.png)
 
 __IN PROGRESS__
