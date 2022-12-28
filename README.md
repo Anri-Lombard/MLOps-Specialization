@@ -669,4 +669,6 @@ __MLOps__
 
 ![MLOps cycle](Images/MLOps.png)
 
+### Week 4: Model Monitoring and Logging
+
 __IN PROGRESS__
