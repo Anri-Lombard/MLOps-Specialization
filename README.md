@@ -1,7 +1,7 @@
 # Machine Learning Engineering for Production (MLOps) Specialization
 
 ## Description
-I am fascinated by what goes into building and deploying models such as ChatGPT and Github Copilot, which are not only successful but have improved my life immeasurably. This repository follows along with the MLOps Specialization in Coursera to learn from the world's best how to build and deploy models in production.
+I am fascinated by what goes into building and deploying models such as ChatGPT and Github Copilot, which are not only successful but have improved my life immeasurably. This repository follows along with the MLOps Specialization in Coursera to learn from the world's best how to build and deploy models in production, and also houses comprehensive explanations of the notes to bolster understanding and avoid a scattered learning process by memorizing slides.
 
 ## Tips on learning
 It could be quite boring and difficult to learn online when there are no teachers or students to push you, especially doing an advanced course like this. Here are some tips that I found useful:
