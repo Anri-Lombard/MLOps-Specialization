@@ -1,7 +1,7 @@
 # Machine Learning Engineering for Production (MLOps) Specialization
 
 ## Description
-I am fascinated by what goes into building and deploying models such as ChatGPT and Github Copilot, which are not only successful but have improved my life immeasurably. This repository follows along with the MLOps Specialization in Coursera to learn from the world's best how to build and deploy models in production, and also houses comprehensive explanations of the notes to bolster understanding and avoid a scattered learning process by memorizing slides.
+I am fascinated by what goes into building and deploying models such as ChatGPT and Github Copilot, which are not only successful but have improved my life immeasurably. This repository follows along with the MLOps Specialization in Coursera to learn from the world's best how to build and deploy models in production, and also houses comprehensive explanations of the notes to bolster understanding and avoid a scattered learning process by memorizing slides. These notes might differ slightly from the notes, so feel free to correct errors.
 
 ## Tips on learning
 It could be quite boring and difficult to learn online when there are no teachers or students to push you, especially doing an advanced course like this. Here are some tips that I found useful:
@@ -668,6 +668,116 @@ ETL pipelines are commonly used in data analytics and machine learning to extrac
 __MLOps__
 
 ![MLOps cycle](Images/MLOps.png)
+
+__Experiment Tracking__
+
+In machine learning operations (MLOps), experiment tracking refers to the process of keeping track of the various experiments or trials that are conducted during the development of a machine learning model. This includes logging key details about each experiment, such as the specific algorithms or techniques used, the input data and parameters, and the output metrics and results.
+
+Experiment tracking helps to ensure that the model development process is organized and transparent, allowing team members to easily understand and replicate past experiments, and to compare the results of different approaches. It also enables data scientists and machine learning engineers to analyze and optimize the model development process, by identifying trends and patterns in the results of different experiments.
+
+There are several tools and platforms available for experiment tracking in MLOps, including open source options like Comet.ml and Weights & Biases, and commercial solutions like H20.ai and DVC. These tools typically provide features such as automatic logging of experiment details, visualization and comparison of experiment results, and collaboration and sharing capabilities.
+
+__Tools For Data Versioning__
+
+There are several tools available for data versioning, which is the process of tracking changes to data over time and storing multiple versions of data for reference or comparison. Some of the tools for data versioning include:
+
+1. Nepute: Nepute is a tool for versioning and tracking changes to data in Apache Parquet format, which is a popular columnar data storage format. Nepute allows users to store multiple versions of their data, view the differences between versions, and revert to previous versions if necessary.
+2. Pachyderm: Pachyderm is an open-source data versioning and collaboration platform for machine learning and data engineering workflows. It allows users to version data, track the history of data transformations, and collaborate with team members on data projects.
+3. Delta Lake: Delta Lake is an open-source storage layer that sits on top of existing data lakes and provides ACID (atomic, consistent, isolated, and durable) transactions and data versioning capabilities. It allows users to update and delete data in their data lake, while still maintaining a history of changes.
+4. Git LFS: Git Large File Storage (LFS) is a version control system for tracking large binary files, such as datasets, that are too large to be stored in a traditional Git repository. It allows users to version and track changes to their data, and to collaborate with team members on data projects.
+5. DoIt: DoIt is a tool for versioning and tracking changes to data in Jupyter notebooks. It allows users to store multiple versions of their notebooks, view the differences between versions, and revert to previous versions if necessary.
+6. DVC: DVC (Data Version Control) is an open-source tool for versioning and tracking changes to data and machine learning models. It allows users to version and track their data and models, collaborate with team members, and reproduce results.
+
+These tools can be useful for managing data versioning and collaboration in data science and machine learning projects, as they allow team members to track changes to data and models, compare different versions, and reproduce past results.
+
+__Bridging ML and IT with MLOps__
+
+Continuous integration (CI) is a software development practice in which code changes are automatically built, tested, and merged into a shared repository as they are committed. The goal of CI is to identify and fix errors as quickly as possible, by running automated tests and builds on a regular basis.
+
+Continuous delivery (CD) is a software development practice in which code changes are automatically built, tested, and deployed to production as they are committed. The goal of CD is to enable rapid and reliable software releases, by automating the build, test, and deployment process.
+
+Continuous training is a machine learning practice in which a machine learning model is trained and updated on a continuous basis, rather than being trained once and then deployed. Continuous training can be used to improve the accuracy and performance of a machine learning model over time, by updating the model with new data and retraining it as needed.
+
+These practices can be used together to enable a continuous integration, delivery, and training workflow for machine learning projects. In such a workflow, new data is automatically collected and incorporated into the training set, and the model is automatically retrained and deployed to production as needed. This can help to ensure that the machine learning model is always up to date and performing at its best.
+
+__ML Solution Lifecycle__
+
+The machine learning (ML) solution lifecycle refers to the series of steps involved in developing, deploying, and maintaining a machine learning model. These steps typically include:
+
+1. Problem definition: The first step in the ML solution lifecycle is to define the problem that the model will be used to solve. This involves identifying the business need or opportunity that the model will address, and defining the specific inputs and outputs of the model.
+2. Data collection and preparation: The next step is to collect and prepare the data that will be used to train and test the model. This may involve gathering data from various sources, cleaning and preprocessing the data, and splitting it into training, validation, and test sets.
+3. Model development: The model development phase involves selecting and implementing machine learning algorithms and techniques to build the model. This may involve experimenting with different algorithms and hyperparameters, and evaluating the model's performance using various metrics.
+4. Model deployment: Once the model has been developed and tested, it can be deployed in a production environment, where it can be used to make predictions or take actions based on real-world data.
+5. Model monitoring and maintenance: After deployment, the model should be monitored to ensure that it is performing as expected. This may involve collecting data on the model's performance, and making updates or changes to the model as needed to improve its accuracy or performance.
+
+This is a general outline of the ML solution lifecycle, and the specific steps and activities involved may vary depending on the specific problem and use case. However, these are the key stages that are typically involved in developing and deploying a machine learning model.
+
+__MLOps levels 1, 2, and 3__
+
+MLOps is a set of practices and tools for managing the entire machine learning (ML) lifecycle, from development to deployment and maintenance. MLOps can be divided into different levels based on the degree of automation and integration that is achieved:
+
+Level 0: MLOps level 0 refers to a manual, ad-hoc approach to ML development and deployment, where each step in the process is performed manually and there is little integration between different stages.
+
+Level 1: MLOps level 1 involves automating some parts of the ML lifecycle, such as model training and testing, but there is still a significant amount of manual work involved.
+
+Level 2: MLOps level 2 involves fully automating the entire ML lifecycle, from development to deployment and maintenance. This includes integrating the various stages of the process into a single, cohesive workflow, and using tools and practices such as continuous integration, continuous delivery, and continuous training to enable rapid and reliable model updates.
+
+At each level, the goal is to optimize the ML lifecycle for efficiency, reliability, and agility, and to enable data scientists and machine learning engineers to focus on the tasks that are most important to the business. However, achieving higher levels of MLOps typically requires a greater investment in automation, integration, and infrastructure, and may require more resources and expertise.
+
+__Model Registry__
+
+A model registry is a central repository for storing, organizing, and managing machine learning models throughout their lifecycle. It provides a single source of truth for the various versions and iterations of a model, as well as metadata and documentation about each model.
+
+Model registries can be useful for a number of purposes, including:
+
+- Tracking and managing the various versions and iterations of a model, to ensure that the correct version is being used in production and to allow for easy comparison of different versions.
+- Providing a central location for storing model artifacts, such as code, data, and trained weights, to facilitate collaboration and reproducibility.
+- Enabling automatic deployment of models to production, by integrating with continuous integration and delivery (CI/CD) pipelines.
+
+There are several tools available for creating and managing model registries, including:
+
+- Azure: Microsoft Azure offers a model registry called Azure Machine Learning Model Management, which allows users to store, version, and deploy models in the Azure cloud.
+- SAS: SAS Model Manager is a model registry and governance platform for managing the entire lifecycle of machine learning models, from development to deployment.
+- MLflow: MLflow is an open-source platform for managing the ML lifecycle, including model registries and model deployment.
+
+These tools can be useful for managing the model registry and deployment process in machine learning projects, by providing a central location for storing and managing models, and by enabling automation and integration with other parts of the ML lifecycle.
+
+
+__Continuous Integration vs Progressive Integration__
+
+Continuous integration (CI) is a software development practice in which code changes are automatically built, tested, and merged into a shared repository as they are committed. The goal of CI is to identify and fix errors as quickly as possible, by running automated tests and builds on a regular basis.
+
+Progressive integration, on the other hand, is a software development practice in which code changes are integrated into the main codebase in smaller, incremental steps, rather than all at once. The goal of progressive integration is to reduce the risk of introducing errors or breaking changes into the codebase, by integrating and testing changes in a controlled and incremental manner.
+
+There are several key differences between continuous integration and progressive integration:
+
+1. Frequency: Continuous integration involves integrating code changes on a regular basis, typically several times per day, while progressive integration involves integrating code changes less frequently, such as once per week or once per month.
+2. Scope: Continuous integration involves integrating all code changes, regardless of their size or impact, while progressive integration involves integrating code changes in smaller, incremental steps, typically focusing on a specific feature or bug fix at a time.
+3. Risk: Continuous integration involves a higher level of risk, as all code changes are integrated and tested together, while progressive integration involves a lower level of risk, as code changes are integrated and tested in smaller, incremental steps.
+
+Overall, continuous integration is a more rapid and agile approach to software development, while progressive integration is a more controlled and incremental approach. The choice between the two approaches will depend on the specific needs and constraints of the project, as well as the team's level of experience and expertise.
+
+__Progressive Delivery__
+
+Progressive delivery is a software development practice in which code changes are released to users in a controlled and incremental manner, rather than being released all at once to the entire user base. The goal of progressive delivery is to reduce the risk of introducing errors or breaking changes into the codebase, and to allow for more fine-grained control over the release process.
+
+Several processes can be used as part of a progressive delivery workflow, including:
+
+1. A/B testing: A/B testing is a process in which two or more versions of a product or feature are released to a small group of users, and the results are compared to determine which version is the most effective. This can be used to validate new features or to determine the optimal configuration for a particular feature.
+2. Multi-armed bandit (MAB): A multi-armed bandit is a type of reinforcement learning algorithm that is used to optimize the allocation of resources, such as the allocation of traffic to different versions of a product or feature. MAB algorithms balance the trade-off between exploration (trying out different versions to see which works best) and exploitation (using the version that has been most effective so far).
+3. Contextual bandit: A contextual bandit is a variant of the multi-armed bandit algorithm that takes into account additional context or information about the user or environment when making decisions about which version of a product or feature to show. This can be useful for personalizing the user experience or for adapting to changing conditions.
+
+These processes can be used to implement a progressive delivery workflow, by releasing code changes to small groups of users and collecting data on their effectiveness, and then using this data to guide the rollout of the changes to the rest of the user base. This can help to reduce the risk of introducing errors or breaking changes, and to optimize the release process for the specific needs and goals of the project.
+
+__Blue/Green Deployment and Canary Deployment__
+
+Blue/green deployment and canary deployment are two techniques for safely releasing code changes to a production environment. Both techniques involve releasing code changes to a small group of users initially, and then gradually rolling out the changes to the rest of the user base based on the results.
+
+Blue/green deployment involves maintaining two separate versions of the production environment, known as the "blue" environment and the "green" environment. Code changes are first deployed to the green environment, and then tested and validated before being switched over to the blue environment. This allows users to continue using the blue environment while the green environment is being tested and validated, and ensures that there is always a fallback option if something goes wrong with the green environment.
+
+Canary deployment is similar to blue/green deployment, in that code changes are initially released to a small group of users before being rolled out to the rest of the user base. However, rather than maintaining separate environments, canary deployment involves releasing code changes to a small percentage of users within the same environment, and then gradually increasing the percentage of users that receive the changes over time. This allows the team to monitor the impact of the code changes on a small group of users before rolling them out to the entire user base.
+
+Both blue/green deployment and canary deployment are useful for reducing the risk of introducing errors or breaking changes into the production environment, and for enabling more fine-grained control over the release process. The choice between the two techniques will depend on the specific needs and constraints of the project, as well as the team's level of experience and expertise.
 
 ### Week 4: Model Monitoring and Logging
 
