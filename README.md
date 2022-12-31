@@ -70,7 +70,18 @@ Over time the tiny goals add up to completion and the imagery will result in sur
     - [KL Divergence](#kl-divergence)
     - [DistilBERT](#distilbert)
   * Week 4
-    - 
+    - [Model Performance Analysis](#model-performance-analysis)
+    - [Black Box vs White Box](#black-box-vs-white-box)
+    - [Model Debugging](#model-debugging)
+    - [Harms](#harms)
+    - [Remediation Techniques](#remediation-techniques)
+    - [Data drift, concept drift, and concept emergence](#data-drift-concept-drift-and-concept-emergence)
+  * Week 5
+    - [Explainable AI](#explainable-ai)
+    - [Responsible AI](#responsible-ai)
+    - [Model Interpretation Techniques](#model-interpretation-techniques)
+    - [SHAP](#shap)
+    - [LIME](#lime)
 1. Deploying Machine Learning Models in Production
 
 ## Course 1: Introduction to Machine Learning in Production
@@ -585,9 +596,13 @@ DistilBERT is trained on the same dataset as BERT, and is designed to preserve t
 
 ### Week 4: Model Analysis
 
+<a name="model-performance-analysis"></a>
+
 [__Model performance analysis__](#machine-learning-modeling-pipeling-in-production)
 
 Model performance analysis is a crucial step in the machine learning process that involves evaluating the accuracy and effectiveness of a model on a given dataset. This helps to identify any weaknesses or issues with the model and guide the development of more effective models. Various metrics can be used to assess model performance, depending on the type of problem being solved and the characteristics of the dataset. It is also important to visualize the results to get a better understanding of how the model is performing and identify any trends or patterns in the data. Overall, model performance analysis is an essential part of the machine learning process that helps to ensure that the model can make accurate and reliable predictions on new, unseen data.
+
+<a name="black-box-vs-white-box"></a>
 
 [__Black box vs white box__](#machine-learning-modeling-pipeling-in-production)
 
@@ -596,6 +611,8 @@ Black box evaluation and white box evaluation are two approaches to evaluating t
 Black box evaluation involves evaluating the model based on its predictions or outputs, without attempting to understand the internal workings of the model. This is typically done using metrics such as accuracy, precision, and recall, which measure the model's ability to make correct predictions on new, unseen data. Black box evaluation is useful for determining the overall effectiveness of a model, but does not provide any insight into how the model is making its predictions.
 
 White box evaluation, on the other hand, involves examining the internal structure and processes of the model to understand how it is making its predictions. This can be done through techniques such as feature importance analysis, which measures the impact of each input feature on the model's predictions, or by examining the model's decision boundaries or rule sets. White box evaluation can provide valuable insights into the model's behavior and can help identify any issues or biases in the model.
+
+<a name="model-debugging"></a>
 
 [__Model debugging__](#machine-learning-modeling-pipeling-in-production)
 
@@ -607,6 +624,8 @@ Model debugging is the process of identifying and addressing issues with a machi
 
 Overall, these techniques can help identify and address issues with a machine-learning model that is not performing as expected. It is important to carefully evaluate the model's performance and identify any potential issues in order to improve its accuracy and reliability.
 
+<a name="harms"></a>
+
 [__Harms__](#machine-learning-modeling-pipeling-in-production)
 
 Machine learning models have the potential to cause some harms, both to individuals and to society as a whole. Some potential harms that can arise from the use of machine learning models include:
@@ -616,6 +635,8 @@ Machine learning models have the potential to cause some harms, both to individu
 
 It is important to carefully consider the potential harms that may arise from the use of machine learning models and take steps to mitigate them. This can include carefully evaluating the training data to ensure that it is representative and unbiased, as well as regularly monitoring the model's performance to ensure that it is not causing any negative impacts.
 
+<a name="remediation-techniques"></a>
+
 [__Remediation techniques__](#machine-learning-modeling-pipeling-in-production)
 
 There are a number of techniques that can be used to address issues or harms caused by machine learning models. Some of these techniques include:
@@ -624,6 +645,8 @@ There are a number of techniques that can be used to address issues or harms cau
 2. Model assertions: These are statements that are included in the model's code that specify certain conditions or constraints that the model should satisfy. If these conditions are not met, the model will produce an error or warning message, allowing the developer to identify and address any issues.
 3. Data preprocessing: This involves cleaning and preparing the training data in order to ensure that it is representative and unbiased. This can include techniques such as removing outliers, normalizing the data, and handling missing values.
 4. Fairness metrics: These are metrics that are used to evaluate the fairness of a machine learning model, such as accuracy, precision, and recall. By tracking these metrics over time, it is possible to identify any potential issues or biases in the model and take steps to address them.
+
+<a name="data-drift-concept-drift-and-concept-emergence"></a>
 
 [__Data drift, concept drift, and concept emergence__](#machine-learning-modeling-pipeling-in-production)
 
@@ -652,6 +675,8 @@ Unsupervised techniques, on the other hand, do not require labeled data and are 
 
 ### Week 5: Interpretability
 
+<a name="explainable-ai"></a>
+
 [__Explainable AI__](#machine-learning-modeling-pipeling-in-production)
 
 Explainable AI, also known as interpretable AI or transparent AI, refers to artificial intelligence systems that can provide an explanation of their predictions, decisions, and actions to humans. This includes not only the reasoning behind the output of the AI system, but also the input data and the internal processes used to generate the output.
@@ -660,6 +685,8 @@ Explainable AI is important because it helps humans understand and trust AI syst
 
 In addition, explainable AI can help identify and mitigate bias in AI systems, as it allows for the examination of the data and algorithms used to make predictions. Without explainability, it may be difficult to determine the sources of bias in an AI system and take steps to address it.
 
+<a name="responsible-ai"></a>
+
 [__Responsible AI__](#machine-learning-modeling-pipeling-in-production)
 
 Responsible AI refers to the development and use of artificial intelligence systems that are designed and implemented in a way that is ethical, transparent, and accountable. It involves considering the potential impacts of AI on society and individuals, and taking steps to ensure that these impacts are positive and beneficial.
@@ -667,6 +694,8 @@ Responsible AI refers to the development and use of artificial intelligence syst
 Responsible AI includes a number of principles and practices, such as ensuring that AI systems are transparent and explainable, protecting against bias and discrimination, respecting privacy and data protection, and considering the broader societal and ethical implications of AI. It also involves ongoing monitoring and evaluation of AI systems to ensure that they continue to operate in a responsible manner.
 
 The development and deployment of responsible AI is important because AI systems can have significant consequences for individuals and society, and it is crucial that they are developed and used in a way that is ethical and beneficial. Responsible AI can help to build trust in AI and ensure that it is used for the benefit of all stakeholders.
+
+<a name="model-interpretation-techniques"></a>
 
 [__Model Interpretation Techniques__](#machine-learning-modeling-pipeling-in-production)
 
@@ -678,6 +707,8 @@ Model-specific interpretation techniques are designed to work with a particular 
 
 Local interpretation techniques provide explanations for specific predictions or decisions made by the model, while global interpretation techniques provide a broad overview of the model's behavior. Local techniques may be more useful for understanding the reasoning behind specific predictions, while global techniques may be more useful for understanding the overall behavior of the model.
 
+<a name="shap"></a>
+
 [__SHAP__](#machine-learning-modeling-pipeling-in-production)
 
 The Shapley value is a concept from game theory that provides a way to fairly distribute the total value of a game among its players. In the context of machine learning, the Shapley value can be used to explain the contribution of each feature to a model's prediction for a particular instance.
@@ -687,6 +718,8 @@ The Shapley value can be calculated using a formula that takes into account the 
 SHAP (SHapley Additive exPlanations) is a framework for calculating the Shapley values for a machine learning model. SHAP uses the Shapley value concept to provide feature importance scores that can be used to explain the prediction of a model for a specific instance.
 
 SHAP values have several desirable properties, including consistency with the model's predictions and the ability to capture both main effects and interactions between features. SHAP values can also be used to identify the most important features for a particular prediction and to compare the importance of features across different predictions.
+
+<a name="lime"></a>
 
 [__LIME__](#machine-learning-modeling-pipeling-in-production)
 
