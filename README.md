@@ -32,15 +32,18 @@ Over time the tiny goals add up to completion and the imagery will result in sur
     - [Human Level Performance](#human-level-performance)
     - [Meta-data, Data Provenance, and Data Lineage](#meta-data-data-provenance-and-data-lineage)
     - [Scoping](#scoping)
-2. Machine Learning Data Lifecycle in Production
-3. Machine Learning Modeling Pipeline in Production
-4. Deploying Machine Learning Models in Production
+2. <a name="machine-learning-data-lifecycle-in-production"></a>Machine Learning Data Lifecycle in Production
+  * Week 1
+    - 
+1. Machine Learning Modeling Pipeline in Production
+2. Deploying Machine Learning Models in Production
 
 ## Course 1: Introduction to Machine Learning in Production
 ### Week 1: Overview of the ML Lifecycle and Deployment
 
 <a name="machine-learning-project-lifecycle"></a>
-<a name="introduction-to-machine-learning-in-production">__Machine Learning Project Lifecycle__</a>
+
+[__Machine Learning Project Lifecycle__](#introduction-to-machine-learning-in-production)
 
 ![Lifecycle of Machine Learning Model](Images/lifecycle.webp)
 
@@ -55,7 +58,8 @@ The lifecycle of a machine learning model is a process that involves the followi
 4. Deployment: Finally, you will need to deploy the model in a production environment, where it can be used to make predictions and solve problems. This will also involve ongoing maintenance and monitoring of the model, to ensure that it continues to perform well and to identify any potential issues or improvements.
 
 <a name="deployment"></a>
-<a name="introduction-to-machine-learning-in-production">__Deployment__</a>
+
+[__Deployment__](#introduction-to-machine-learning-in-production)
 
 One of the key challenges in deploying machine learning models is concept drift, which occurs when the underlying distribution of the data changes over time. This can lead to a decline in the performance of the model, as it is no longer able to make accurate predictions on the new data. Another related challenge is data drift, which occurs when there are changes in the quality or format of the data being used to train the model. This can also impact the performance of the model and make it less effective at making predictions. Both concept drift and data drift can be difficult to detect and manage, and they require ongoing monitoring and retraining of the model to ensure it remains accurate and effective.
 
@@ -63,9 +67,9 @@ There are a number of key challenges to consider when deploying machine learning
 1. Realtime or batch: One challenge is deciding whether to use a real-time or batch-based approach for deploying the model. Realtime deployment allows the model to make predictions as new data becomes available, while batch deployment involves processing data in larger chunks at regular intervals.
 2. Cloud vs Edge/Browser: Another challenge is deciding whether to deploy the model in the cloud or on edge devices or in a web browser. Deploying in the cloud allows for easier scalability and access to more compute resources, but it can also result in higher latency and increased data transfer costs. Deploying on-edge devices or in a web browser can reduce latency and improve privacy, but it may also require more complex infrastructure and management.
 3. Compute Resources (CPU/GPU/Memory): Choosing the right to compute resources for deploying the model is also critical. The type and amount of CPU, GPU, and memory available will impact the performance of the model and its ability to make predictions in real-time or batch mode.
-2. Latency/Throughput: The latency and throughput of the model are also important considerations. Latency refers to the time it takes for the model to make a prediction, while throughput refers to the number of predictions the model can make per second. Both latency and throughput can impact the user experience and the overall performance of the model.
-3. Logging: Logging is an essential part of deploying machine learning models, as it allows for tracking and monitoring of the model's performance and accuracy over time. Proper logging can also help with troubleshooting and debugging any issues that may arise.
-4. Security and Privacy: Ensuring the security and privacy of the data being used to train and evaluate the model is also a key challenge. This can involve implementing encryption and other security measures to protect the data, as well as complying with relevant laws and regulations.
+4. Latency/Throughput: The latency and throughput of the model are also important considerations. Latency refers to the time it takes for the model to make a prediction, while throughput refers to the number of predictions the model can make per second. Both latency and throughput can impact the user experience and the overall performance of the model.
+5. Logging: Logging is an essential part of deploying machine learning models, as it allows for tracking and monitoring of the model's performance and accuracy over time. Proper logging can also help with troubleshooting and debugging any issues that may arise.
+6. Security and Privacy: Ensuring the security and privacy of the data being used to train and evaluate the model is also a key challenge. This can involve implementing encryption and other security measures to protect the data, as well as complying with relevant laws and regulations.
 
 ![Deployment](Images/deployment.jpeg)
 
@@ -78,7 +82,8 @@ Canary deployment involves deploying a new machine-learning model to a subset of
 Blue-green deployment involves deploying a new machine-learning model alongside the existing model but routing a portion of the incoming requests to the new model. This allows for a seamless transition from the old model to the new one, as the two models can be compared and the performance of the new model can be evaluated before it is used to serve all predictions.
 
 <a name="automation"></a>
-<a name="introduction-to-machine-learning-in-production">__Automation__</a>
+
+[__Automation__](#introduction-to-machine-learning-in-production)
 
 The degree of automation refers to the extent to which the deployment process is automated. Different levels of automation can be applied to the deployment process, ranging from fully manual to fully automatic.
 
@@ -89,7 +94,8 @@ At the next level of automation, some steps in the deployment process are automa
 At the highest level of automation, the entire deployment process is fully automated, from model training and testing to deployment and monitoring. This allows for rapid and efficient deployment of machine learning models, with minimal manual intervention. This is often the preferred approach for deploying machine learning models in production environments.
 
 <a name="monitoring-and-maintenance"></a>
-<a name="introduction-to-machine-learning-in-production">__Monitoring and Maintenance__</a>
+
+[__Monitoring and Maintenance__](#introduction-to-machine-learning-in-production)
 
 ![Iteration](Images/iteration.png)
 
@@ -98,17 +104,20 @@ Model maintenance is the process of keeping a machine learning model up to date 
 ### Week 2: Select and Train a Model
 
 <a name="modeling"></a>
-<a name="introduction-to-machine-learning-in-production">__Modeling__</a>
+
+[__Modeling__](#introduction-to-machine-learning-in-production)
 
 In machine learning, the ultimate goal is to develop a model that not only performs well on the test set but also solves the business problem at hand. This is because the purpose of machine learning is to develop models that can be used to make predictions or take actions in real-world situations. If a model only performs well on the test set but does not solve the business problem, it is not useful in practice and will not provide any value to the business. Therefore, it is important to choose a model that not only performs well on the test set but also can solve a business problem and provide value in real-world situations.
 
 <a name="baseline">
-<a name="introduction-to-machine-learning-in-production">__Baseline__</a>
+
+[__Baseline__](#introduction-to-machine-learning-in-production)
 
 Measuring human-level performance is crucial when comparing a machine-learning model to a human benchmark because it enables us to see how well the model is performing compared to a known standard. This helps us identify areas where the model is outperforming or underperforming compared to human performance and guides us in determining where to focus our attention and efforts. By comparing the model to human-level performance, we can gain a better understanding of the model's capabilities and limitations, and determine whether it is achieving the desired level of accuracy and performance.
 
 <a name="precision-recall-and-f1"></a>
-<a name="introduction-to-machine-learning-in-production">__Precision, Recall, and F1__</a>
+
+[__Precision, Recall, and F1__](#introduction-to-machine-learning-in-production)
 
 In a machine-learning context, precision and recall are two metrics that are used to evaluate the performance of a classifier. Precision is a measure of the fraction of correct positive predictions, and is calculated using the formula:
 
@@ -127,7 +136,8 @@ The F1 score is a measure that combines precision and recall into a single metri
 The F1 score is a useful metric because it takes into account both the classifier's precision and recall, and provides a balance between the two. It is particularly useful in cases where you want to avoid either under-prediction or over-prediction of the positive class. For example, in a medical diagnostic setting, a high F1 score would indicate that the classifier has both high precision (i.e. it makes very few false positive predictions) and high recall (i.e. it correctly identifies most of the positive cases).
 
 <a name="data-centric-vs-model-centric"></a>
-<a name="introduction-to-machine-learning-in-production">__Data-centric vs. Model-centric__</a>
+
+[__Data-centric vs. Model-centric__](#introduction-to-machine-learning-in-production)
 
 The terms data-centric and model-centric refer to two different approaches to AI development. Data-centric AI development focuses on the data that is used to train and evaluate the performance of machine learning models. This approach emphasizes the importance of using large, diverse, and high-quality datasets to train and evaluate machine learning models.
 
@@ -139,8 +149,9 @@ Another advantage of data-centric AI development is that it allows for the use o
 
 Overall, data-centric AI development can be more advantageous than model-centric AI development because it allows for the use of large, diverse, and high-quality datasets to train and evaluate machine learning models, which can improve the accuracy and reliability of the predictions or decisions made by the models.
 
-<a name="data-augmentation">
-<a name="introduction-to-machine-learning-in-production">__Data Augmentation__</a>
+<a name="data-augmentation"></a>
+
+[__Data Augmentation__](#introduction-to-machine-learning-in-production)
 
 Data augmentation is a technique used to artificially increase the size of a dataset by generating additional data points based on the existing data. This is typically done by applying various transformations to the existing data, such as rotating, scaling, or cropping images, or by adding random noise or perturbations to the data.
 
@@ -151,7 +162,8 @@ Data augmentation is often used in the context of image classification and objec
 Overall, data augmentation is a useful technique for increasing the size and diversity of a dataset, which can help to improve the performance of machine learning models.
 
 <a name="experiment-tracking"></a>
-<a name="introduction-to-machine-learning-in-production">__Experiment Tracking__</a>
+
+[__Experiment Tracking__](#introduction-to-machine-learning-in-production)
 
 Experiment tracking is the process of keeping track of the different experiments that you run in your machine learning development and the results that they produce. This can be useful for several reasons, including:
 
@@ -186,24 +198,28 @@ Visualization and analysis capabilities, such as graphs, charts, and tables, to 
 ### Week 3: Data Definition and Baseline
 
 <a name="unstructured-and-structured-data">
-<a name="introduction-to-machine-learning-in-production">__Unstructured and Structured Data__</a>
+
+[__Unstructured and Structured Data__](#introduction-to-machine-learning-in-production)
 
 Unstructured data is data that does not have a pre-defined structure or format, making it difficult to process and analyze using traditional data management tools. Examples of unstructured data include text documents, audio and video files, and social media posts. In contrast, structured data is data that is organized into a pre-defined format or schema, making it easier to process and analyze. Examples of structured data include database records, spreadsheets, and CSV files.
 
 In general, humans are better at labeling unstructured data than structured data, as unstructured data often contains more complex and nuanced information that is difficult for machines to understand. For example, a human might be able to accurately label the sentiment of a written review, but a machine might struggle to do so. On the other hand, structured data is often easier for machines to process, as it is organized in a way that is more predictable and consistent. This can make it easier for machines to automatically label and analyze structured data.
 
 <a name="small-data-and-big-data"></a>
-<a name="introduction-to-machine-learning-in-production">__Small Data and Big Data__</a>
+
+[__Small Data and Big Data__](#introduction-to-machine-learning-in-production)
 
 Small data and big data are terms used to describe the size and complexity of data sets. Small data sets are relatively small and can be easily managed and analyzed using standard data management and analysis tools, while big data sets are so large and complex that they require specialized tools and techniques in order to be processed and analyzed effectively. The main difference between small data and big data is the size and complexity of the data sets involved, which can affect how the data is managed and analyzed. Small data sets are more manageable and easier to analyze, while big data sets require specialized tools and techniques to process and analyze effectively.
 
 <a name="label-consistency"></a>
-<a name="introduction-to-machine-learning-in-production">__Label Consistency__</a>
+
+[__Label Consistency__](#introduction-to-machine-learning-in-production)
 
 Label consistency in machine learning refers to the idea that the labels assigned to data points should be consistent and correct in order for the machine learning model to be effective. This means that the labels should be accurately applied to the data, and should not be conflicting or inconsistent in any way. Ensuring label consistency is important because if the labels are incorrect or inconsistent, the machine learning model will not be able to learn effectively and will not be able to make accurate predictions. This can lead to poor performance and potentially even incorrect or harmful decisions made by the model.
 
 <a name="human-level-performance"></a>
-<a name="introduction-to-machine-learning-in-production">__Human Level Performance__</a>
+
+[__Human Level Performance__](#introduction-to-machine-learning-in-production)
 
 ![Human Level Performance](./Images/hlp.jpeg)
 
@@ -212,7 +228,8 @@ HLP, or human-level performance, refers to the ability of a machine-learning mod
 Although, as Andrew mentioned, it is not necessary to achieve HLP to build a useful machine-learning model.
 
 <a name="meta-data-data-provenance-and-data-lineage"></a>
-<a name="introduction-to-machine-learning-in-production">__Meta-data, Data Provenance, and Data Lineage__</a>
+
+[__Meta-data, Data Provenance, and Data Lineage__](#introduction-to-machine-learning-in-production)
 
 Meta-data is information that describes other data. It can include things like the date a file was created, the author of the file, and keywords that describe the contents of the file.
 
@@ -223,7 +240,8 @@ Data lineage is the history of data, including its origins, where it has been st
 Together, these concepts are important for understanding the origins and quality of data, which is essential for making decisions and taking actions based on that data.
 
 <a name="scoping"></a>
-<a name="introduction-to-machine-learning-in-production">__Scoping__</a>
+
+[__Scoping__](#introduction-to-machine-learning-in-production)
 
 Scoping in machine learning development is the process of defining the goals, boundaries, and constraints of a machine learning project to ensure that the model being developed is well-suited to solving the intended problem.
 
