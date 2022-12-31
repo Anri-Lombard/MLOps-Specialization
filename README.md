@@ -45,9 +45,16 @@ Over time the tiny goals add up to completion and the imagery will result in sur
     - [tf.Transform](#tf-transform)
     - [Feature Selection](#feature-selection)
   * Week 3
-    - 
-1. Machine Learning Modeling Pipeline in Production
-2. Deploying Machine Learning Models in Production
+    - [Data Journey](#data-journey)
+    - [Data Provenance/Lineage](#data-provenance-lineage)
+    - [Metadata](#metadata)
+    - [Feature Stores](#feature-stores)
+    - [Data Warehouse](#data-warehouse)
+  * Week 4
+    - [Active Learning](#active-learning)
+    - [Weak Supervision](#weak-supervision)
+3. Machine Learning Modeling Pipeline in Production
+4. Deploying Machine Learning Models in Production
 
 ## Course 1: Introduction to Machine Learning in Production
 ### Week 1: Overview of the ML Lifecycle and Deployment
@@ -384,23 +391,31 @@ Some methods used are:
 
 ### Week 3: Data Journey and Data Storage
 
-
+<a name="data-journey"></a>
 
 [__Data Journey__](#machine-learning-data-lifecycle-in-production)
 
 ![Data Journey](Images/Data%20journey.png)
 
+<a name="data-provenance-lineage"></a>
+
 [__Data Provenance/Lineage__](#machine-learning-data-lifecycle-in-production)
 
 Data provenance in machine learning refers to the process of tracking the origin and processing of data used in machine learning models. It involves keeping a record of the data sources, data transformations and preprocessing steps, and any other relevant information about the data to understand its quality and characteristics, which can significantly affect the performance of a machine learning model. Data provenance is important in situations where the results of a machine learning model are being used for decision-making or other critical applications, as it provides a clear understanding of the data that was used to generate the model's predictions and the process by which the model was trained and evaluated. Tools such as data lineage tools and data dictionaries can be used to track and document data provenance.
+
+<a name="metadata"></a>
 
 [__Metadata__](#machine-learning-data-lifecycle-in-production)
 
 Machine learning metadata refers to the data about the data that is used in machine learning models. It includes information such as the data sources, data preprocessing steps, feature engineering techniques, and any other relevant information about the data. Machine learning metadata is important for understanding the characteristics and quality of the data that is being used to train and evaluate a machine learning model. It can also be useful for reproducing the results of a machine learning model, as it provides a record of the data and techniques that were used to generate the model. Machine learning metadata can be tracked using tools such as data dictionaries and data lineage tools.
 
+<a name="feature-stores"></a>
+
 [__Feature Stores__](#machine-learning-data-lifecycle-in-production)
 
 In machine learning, a feature store is a centralized repository for storing and managing features that are used as input variables in the training, evaluation, and serving of machine learning models. A feature store enables data scientists and machine learning engineers to store, manage, and version control their features in a central location, making it easier to reuse and share features across different projects and teams. It also provides tools for pre-processing and transforming raw data into features that are ready for use in machine learning pipelines, improving the quality and performance of machine learning models. By facilitating collaboration and reducing duplication of effort, a feature store can greatly simplify the process of building and deploying machine learning models.
+
+<a name="data-warehouse"></a>
 
 [__Data Warehouse__](#machine-learning-data-lifecycle-in-production)
 
@@ -408,11 +423,15 @@ In machine learning, a data warehouse is a centralized repository for storing an
 
 ### Week 4: Advanced Labeling, Augmentation, and Data Preprocessing
 
-__Active Learning__
+<a name="active-learning"></a>
+
+[__Active Learning__](#machine-learning-data-lifecycle-in-production)
 
 Active learning is a machine learning technique in which a learning algorithm is able to interactively query the user (or some other information source) to obtain the desired outputs at new data points. This interaction can be used to improve the performance of the algorithm by allowing it to focus on the most important or uncertain data points. Active learning is particularly useful when labeled training data is scarce or expensive to obtain, as it allows the algorithm to learn from a smaller amount of labeled data by actively selecting the most informative data points to label. Active learning can be applied to a variety of learning tasks, including supervised learning, semi-supervised learning, and reinforcement learning. It is often used in applications where it is important to minimize the amount of human effort required to label data, such as in natural language processing and computer vision.
 
-__Weak Supervision__
+<a name="weak-supervision"></a>
+
+[__Weak Supervision__](#machine-learning-data-lifecycle-in-production)
 
 Weak supervision is a machine-learning approach that relies on incomplete or noisy labels for training data. It is often used when there is not enough annotated data available to train a model using traditional supervised learning techniques. Weak supervision allows models to be trained using noisy or partially labeled data by using techniques such as distant supervision, bootstrapping, and self-training. These techniques can be used to generate additional labels or to improve the quality of the existing labels, enabling the model to learn even in the absence of complete supervision. Weak supervision can be especially useful in scenarios where it is difficult or time-consuming to collect and annotate large amounts of data, such as in natural language processing or computer vision tasks.
 
