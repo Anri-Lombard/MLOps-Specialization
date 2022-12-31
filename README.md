@@ -53,8 +53,25 @@ Over time the tiny goals add up to completion and the imagery will result in sur
   * Week 4
     - [Active Learning](#active-learning)
     - [Weak Supervision](#weak-supervision)
-3. Machine Learning Modeling Pipeline in Production
-4. Deploying Machine Learning Models in Production
+3. <a name="machine-learning-modeling-pipeling-in-production"></a>Machine Learning Modeling Pipeline in Production
+  * Week 1
+    - [AutoML](#automl)
+    - [Search Strategies](#search-strategies)
+    - [Strategies to Reduce Cost](#strategies-to-reduce-cost)
+  * Week 2
+    - [Dimensionality Reduction](#dimensionality-reduction)
+    - [Principal Component Analysis](#pca)
+    - [Quantization and Pruning](#quantization-and-pruning)
+    - [Quantization-aware training](#quantization-aware-training)
+    - [Pruning](#pruning)
+  * Week 3
+    - [Distributed Training](#distributed-training)
+    - [Knowledge Distillation](#knowledge-distillation)
+    - [KL Divergence](#kl-divergence)
+    - [DistilBERT](#distilbert)
+  * Week 4
+    - 
+1. Deploying Machine Learning Models in Production
 
 ## Course 1: Introduction to Machine Learning in Production
 ### Week 1: Overview of the ML Lifecycle and Deployment
@@ -445,11 +462,15 @@ Snorkel also provides several tools for managing the process of weak supervision
 
 ### Week 1: Neural Architecture Search
 
-__AutoML__
+<a name="automl"></a>
+
+[__AutoML__](#machine-learning-modeling-pipeling-in-production)
 
 AutoML is a set of techniques and tools that aim to automate the process of designing, training, and optimizing machine learning models. It involves using algorithms and software tools to search through a large space of possible model architectures, hyperparameter settings, and other design choices, to find the combination that yields the best performance on a given task. AutoML can be applied to a wide range of machine learning tasks, including supervised learning, unsupervised learning, and reinforcement learning. It can be particularly useful for data scientists and machine learning practitioners who want to quickly and efficiently find good models for their tasks, or for organizations that want to build machine learning systems with minimal human intervention.
 
-__Search Strategies__
+<a name="search-strategies"></a>
+
+[__Search Strategies__](#machine-learning-modeling-pipeling-in-production)
 
 1. Grid Search
 2. Random Search
@@ -457,7 +478,9 @@ __Search Strategies__
 4. Evolutionary Algorithms
 5. Reinforcement Learning
 
-__Strategies to reduce cost__
+<a name="strategies-to-reduce-cost"></a>
+
+[__Strategies to reduce cost__](#machine-learning-modeling-pipeling-in-production)
 
 Several strategies can be used to reduce the cost of AutoML, specifically in the areas of lower fidelity estimates, learning curve estimation, and weight inheritance/network morphisms.
 
@@ -469,19 +492,25 @@ By using these strategies, it is possible to reduce the cost of AutoML and impro
 
 ### Week 2: Model Resource Management Techniques
 
-__Dimensionality Reduction__
+<a name="dimensionality-reduction"></a>
+
+[__Dimensionality Reduction__](#machine-learning-modeling-pipeling-in-production)
 
 The curse of dimensionality refers to the phenomenon in machine learning where the performance of a model decreases as the number of dimensions in the input data increases. This is because as the number of dimensions increases, the volume of the input space increases exponentially, leading to a sparsity of data points and a corresponding increase in the generalization error of the model. The curse of dimensionality can be particularly problematic in cases where the input space is high-dimensional and the training data is limited, as the model may struggle to learn meaningful patterns in the data. To mitigate the effects of the curse of dimensionality, it is often necessary to use techniques such as feature selection or dimensionality reduction to reduce the number of dimensions in the input data.
 
 The Hughes effect, also known as the Hughes phenomenon or the no free lunch theorem, refers to the phenomenon in machine learning where increasing the number of features in a model can actually degrade its performance. This is because as the number of features increases, the model may begin to overfit to the training data, leading to poor generalization to new data. The Hughes effect is particularly problematic in cases where the number of features is significantly larger than the number of training examples, as the model may have difficulty learning meaningful patterns in the data. To mitigate the effects of the Hughes effect, it is often necessary to use techniques such as feature selection or regularization to reduce the number of features in the model.
 
-__Principal Component Analysis__
+<a name="pca"></a>
+
+[__Principal Component Analysis__](#machine-learning-modeling-pipeling-in-production)
 
 Principal component analysis (PCA) is a statistical technique that is used to reduce the dimensionality of a dataset by finding a set of uncorrelated variables, called principal components, that capture the most variance in the data. It is often used as a data preprocessing step in machine learning to reduce the number of features and remove redundancy, making it easier to model and interpret the data. It can also be used for data visualization by projecting the data onto a lower-dimensional space. PCA is useful for a wide range of applications and is particularly useful for high-dimensional datasets with correlated variables.
 
 Singular value decomposition (SVD) is a mathematical technique that decomposes a matrix into the product of three matrices: a left singular matrix, a diagonal matrix of singular values, and a right singular matrix. SVD is a generalization of eigenvalue decomposition, which is used to decompose a matrix into the product of a matrix and its inverse. SVD is used in a wide range of applications, including data compression, image processing, and natural language processing. It is also a key tool in the development of recommendation systems, as it can be used to decompose a matrix representing user-item interactions into a matrix of user preferences and a matrix of item characteristics.
 
-__Quantization and Pruning__
+<a name="quantization-and-pruning"></a>
+
+[__Quantization and Pruning__](#machine-learning-modeling-pipeling-in-production)
 
 Quantization is the process of representing a large set of data with a smaller set of discrete values. In machine learning, quantization is often used to reduce the size and complexity of models, which can make them faster to run and easier to store.
 
@@ -498,7 +527,9 @@ To quantize a machine learning model, the following steps are typically followed
 3. Quantize the activations and weights: Once the range of values has been determined, the activations and weights can be quantized to a smaller set of discrete values. This can be done by using a quantization function that maps the full precision values to the quantized values.
 4. Fine-tune the quantized model: Finally, the quantized model may need to be fine-tuned to ensure that it performs as well as the full precision model. This can be done by training the model using a reduced learning rate and possibly other techniques such as weight decay.
 
-__Quantization-aware training__
+<a name="quantization-aware-training"></a>
+
+[__Quantization-aware training__](#machine-learning-modeling-pipeling-in-production)
 
 Quantization-aware training (QAT) is a technique used to train machine learning models that are intended to be quantized after training. In other words, QAT is a way of training a model so that it performs well when it is quantized to a smaller set of discrete values, rather than being left in full precision.
 
@@ -506,13 +537,17 @@ The main difference between QAT and standard training is that QAT takes into acc
 
 QAT can be beneficial when training models that will be deployed on devices with limited computational resources, such as mobile phones or embedded systems. By training the model to work well with quantized values, it can be made smaller and faster to run, which can be important for these types of devices.
 
-__Pruning__
+<a name="pruning"></a>
+
+[__Pruning__](#machine-learning-modeling-pipeling-in-production)
 
 Pruning is a technique used to reduce the size and complexity of a machine-learning model by removing unnecessary parameters or connections. The goal of pruning is to remove elements of the model that do not contribute significantly to its performance, while still maintaining its accuracy. Pruning can be used to reduce the size of a model, which can make it faster to run and easier to store. It can also be used to improve the generalization ability of a model, by removing overfitting elements. Pruning can be applied to a variety of model architectures, such as neural networks, decision trees, and support vector machines. There are several techniques for pruning a machine learning model, including weight pruning, neuron pruning, and filter pruning.
 
 ### Week 3: High-Performance Model
 
-__Distributed Training__
+<a name="distributed-training"></a>
+
+[__Distributed Training__](#machine-learning-modeling-pipeling-in-production)
 
 Distributed training is a method of training machine learning models on multiple machines, possibly with multiple GPUs on each machine. It is often used to train very large models that cannot fit on a single machine, or to train models faster by utilizing the additional computational resources provided by multiple machines.
 
@@ -520,11 +555,15 @@ There are several ways to perform distributed training, including data paralleli
 
 Distributed training can be challenging to set up and can require special tools and libraries to manage the communication between the different machines and GPUs. However, it can significantly improve the speed and scalability of model training, making it an important technique in high-performance machine learning.
 
-__Knowledge Distillation__
+<a name="knowledge-distillation"></a>
+
+[__Knowledge Distillation__](#machine-learning-modeling-pipeling-in-production)
 
 In machine learning, knowledge distillation is a technique for training a smaller, more efficient model (called the student model) to perform similarly to a larger, less efficient model (called the teacher model). The student model is trained to mimic the output of the teacher model, which is typically trained on a larger dataset. There are several ways to perform knowledge distillation, such as using the outputs of the teacher model as the target labels for training the student model, or using the intermediate activations of the teacher model as features for training the student model. The goal of knowledge distillation is to improve the efficiency and performance of the student model by transferring knowledge from the teacher model.
 
-__KL Divergence__
+<a name="kl-divergence"></a>
+
+[__KL Divergence__](#machine-learning-modeling-pipeling-in-production)
 
 Kullback-Leibler divergence, or KL divergence for short, is a measure of the difference between two probability distributions. It is often used in machine learning to compare the performance of different models or to evaluate the fit of a model to a dataset.
 
@@ -534,7 +573,9 @@ KL divergence is non-negative and is equal to zero if and only if the two distri
 
 KL divergence is often used in machine learning as a loss function or in model evaluation. It is particularly useful for comparing the fit of different models to a dataset, or for evaluating the performance of a model on a held-out test set.
 
-__DistilBERT__
+<a name="distilbert"></a>
+
+[__DistilBERT__](#machine-learning-modeling-pipeling-in-production)
 
 DistilBERT is a small, fast, and lightweight version of the popular BERT language model developed by Hugging Face. It was trained using knowledge distillation, a technique for training a smaller, more efficient model (called the student model) to perform similarly to a larger, less efficient model (called the teacher model).
 
@@ -544,11 +585,11 @@ DistilBERT is trained on the same dataset as BERT, and is designed to preserve t
 
 ### Week 4: Model Analysis
 
-__Model performance analysis__
+[__Model performance analysis__](#machine-learning-modeling-pipeling-in-production)
 
 Model performance analysis is a crucial step in the machine learning process that involves evaluating the accuracy and effectiveness of a model on a given dataset. This helps to identify any weaknesses or issues with the model and guide the development of more effective models. Various metrics can be used to assess model performance, depending on the type of problem being solved and the characteristics of the dataset. It is also important to visualize the results to get a better understanding of how the model is performing and identify any trends or patterns in the data. Overall, model performance analysis is an essential part of the machine learning process that helps to ensure that the model can make accurate and reliable predictions on new, unseen data.
 
-__Black box vs white box__
+[__Black box vs white box__](#machine-learning-modeling-pipeling-in-production)
 
 Black box evaluation and white box evaluation are two approaches to evaluating the performance of a machine learning model.
 
@@ -556,7 +597,7 @@ Black box evaluation involves evaluating the model based on its predictions or o
 
 White box evaluation, on the other hand, involves examining the internal structure and processes of the model to understand how it is making its predictions. This can be done through techniques such as feature importance analysis, which measures the impact of each input feature on the model's predictions, or by examining the model's decision boundaries or rule sets. White box evaluation can provide valuable insights into the model's behavior and can help identify any issues or biases in the model.
 
-__Model debugging__
+[__Model debugging__](#machine-learning-modeling-pipeling-in-production)
 
 Model debugging is the process of identifying and addressing issues with a machine-learning model that is not performing as expected. There are several techniques that can be used to debug a model, including:
 
@@ -566,7 +607,7 @@ Model debugging is the process of identifying and addressing issues with a machi
 
 Overall, these techniques can help identify and address issues with a machine-learning model that is not performing as expected. It is important to carefully evaluate the model's performance and identify any potential issues in order to improve its accuracy and reliability.
 
-__Harms__
+[__Harms__](#machine-learning-modeling-pipeling-in-production)
 
 Machine learning models have the potential to cause some harms, both to individuals and to society as a whole. Some potential harms that can arise from the use of machine learning models include:
 
@@ -575,7 +616,7 @@ Machine learning models have the potential to cause some harms, both to individu
 
 It is important to carefully consider the potential harms that may arise from the use of machine learning models and take steps to mitigate them. This can include carefully evaluating the training data to ensure that it is representative and unbiased, as well as regularly monitoring the model's performance to ensure that it is not causing any negative impacts.
 
-__Remediation techniques__
+[__Remediation techniques__](#machine-learning-modeling-pipeling-in-production)
 
 There are a number of techniques that can be used to address issues or harms caused by machine learning models. Some of these techniques include:
 
@@ -584,7 +625,7 @@ There are a number of techniques that can be used to address issues or harms cau
 3. Data preprocessing: This involves cleaning and preparing the training data in order to ensure that it is representative and unbiased. This can include techniques such as removing outliers, normalizing the data, and handling missing values.
 4. Fairness metrics: These are metrics that are used to evaluate the fairness of a machine learning model, such as accuracy, precision, and recall. By tracking these metrics over time, it is possible to identify any potential issues or biases in the model and take steps to address them.
 
-__Data drift, concept drift, and concept emergence__
+[__Data drift, concept drift, and concept emergence__](#machine-learning-modeling-pipeling-in-production)
 
 In machine learning, data drift, concept drift, and concept emergence refer to changes that can occur in the data or the underlying concept that a model is trying to learn. These changes can have a significant impact on the performance of a machine-learning model and can lead to the model becoming less accurate over time.
 
@@ -592,7 +633,7 @@ In machine learning, data drift, concept drift, and concept emergence refer to c
 2. Concept drift: This occurs when the concept or task that the model is trying to learn changes over time. For example, if a model is trained to classify images of cats and dogs, and the concept of what constitutes a cat or a dog changes over time (e.g., due to changes in breed popularity), the model may become less accurate.
 3. Concept emergence: This occurs when a new concept or task emerges that the model was not designed to handle. For example, if a model is trained to classify images of animals, and a new type of animal is introduced that the model has never seen before, the model may not be able to accurately classify the new animal.
 
-__Monitoring techniques__
+[__Monitoring techniques__](#machine-learning-modeling-pipeling-in-production)
 
 Supervised techniques and unsupervised techniques are two types of machine learning techniques that are used to analyze data and identify patterns and trends.
 
@@ -611,7 +652,7 @@ Unsupervised techniques, on the other hand, do not require labeled data and are 
 
 ### Week 5: Interpretability
 
-__Explainable AI__
+[__Explainable AI__](#machine-learning-modeling-pipeling-in-production)
 
 Explainable AI, also known as interpretable AI or transparent AI, refers to artificial intelligence systems that can provide an explanation of their predictions, decisions, and actions to humans. This includes not only the reasoning behind the output of the AI system, but also the input data and the internal processes used to generate the output.
 
@@ -619,7 +660,7 @@ Explainable AI is important because it helps humans understand and trust AI syst
 
 In addition, explainable AI can help identify and mitigate bias in AI systems, as it allows for the examination of the data and algorithms used to make predictions. Without explainability, it may be difficult to determine the sources of bias in an AI system and take steps to address it.
 
-__Responsible AI__
+[__Responsible AI__](#machine-learning-modeling-pipeling-in-production)
 
 Responsible AI refers to the development and use of artificial intelligence systems that are designed and implemented in a way that is ethical, transparent, and accountable. It involves considering the potential impacts of AI on society and individuals, and taking steps to ensure that these impacts are positive and beneficial.
 
@@ -627,7 +668,7 @@ Responsible AI includes a number of principles and practices, such as ensuring t
 
 The development and deployment of responsible AI is important because AI systems can have significant consequences for individuals and society, and it is crucial that they are developed and used in a way that is ethical and beneficial. Responsible AI can help to build trust in AI and ensure that it is used for the benefit of all stakeholders.
 
-__Model Interpretation Techniques__
+[__Model Interpretation Techniques__](#machine-learning-modeling-pipeling-in-production)
 
 Model interpretation techniques refer to methods for understanding and explaining the inner workings of machine learning models and their predictions. There are several different ways to classify interpretation techniques, including by the timing of their application (intrinsic vs. post-hoc), the scope of their explanation (local vs. global), and the type of model they are applied to (model-specific vs. model-agnostic).
 
@@ -637,7 +678,7 @@ Model-specific interpretation techniques are designed to work with a particular 
 
 Local interpretation techniques provide explanations for specific predictions or decisions made by the model, while global interpretation techniques provide a broad overview of the model's behavior. Local techniques may be more useful for understanding the reasoning behind specific predictions, while global techniques may be more useful for understanding the overall behavior of the model.
 
-__SHAP__
+[__SHAP__](#machine-learning-modeling-pipeling-in-production)
 
 The Shapley value is a concept from game theory that provides a way to fairly distribute the total value of a game among its players. In the context of machine learning, the Shapley value can be used to explain the contribution of each feature to a model's prediction for a particular instance.
 
@@ -647,7 +688,7 @@ SHAP (SHapley Additive exPlanations) is a framework for calculating the Shapley 
 
 SHAP values have several desirable properties, including consistency with the model's predictions and the ability to capture both main effects and interactions between features. SHAP values can also be used to identify the most important features for a particular prediction and to compare the importance of features across different predictions.
 
-__LIME__
+[__LIME__](#machine-learning-modeling-pipeling-in-production)
 
 LIME (Local Interpretable Model-agnostic Explanations) is a model interpretation technique that provides explanations for the predictions of any machine learning model, by approximating the behavior of the model locally around a specific instance.
 
