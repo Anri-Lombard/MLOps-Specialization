@@ -34,6 +34,17 @@ Over time the tiny goals add up to completion and the imagery will result in sur
     - [Scoping](#scoping)
 2. <a name="machine-learning-data-lifecycle-in-production"></a>Machine Learning Data Lifecycle in Production
   * Week 1
+    - [Collecting Data](#collecting-data)
+    - [Labeling Data](#labeling-data)
+    - [Validating Data](#validating-data)
+  * Week 2
+    - [Feature Engineering](#feature-engineering)
+    - [Preprocessing](#preprocessing)
+    - [Feature Transformations at Scale](#feature-transformations-at-scale)
+    - [Analyzers Framework](#analyzers-framework)
+    - [tf.Transform](#tf-transform)
+    - [Feature Selection](#feature-selection)
+  * Week 3
     - 
 1. Machine Learning Modeling Pipeline in Production
 2. Deploying Machine Learning Models in Production
@@ -255,7 +266,9 @@ Process:
 ## Course 2: Machine Learning Data Lifecycle in Production
 ### Week 1: Collecting, Labeling, and Validating Data
 
-__Collecting Data__
+<a name="collecting-data"></a>
+
+[__Collecting Data__](#machine-learning-data-lifecycle-in-production)
 
 There are several advantages to collecting data in machine learning production:
 1. Increased accuracy: One of the main advantages of collecting data in machine learning production is that it allows you to improve the accuracy of your models. As you collect more data, you can train your models on a larger and more diverse set of examples, which can help them generalize better to new cases.
@@ -267,7 +280,9 @@ However, there are also some disadvantages to collecting data in machine learnin
 2. Cost: Collecting data can be expensive, particularly if you need to purchase data from third-party sources. This can be a significant disadvantage for companies with limited budgets.
 3. Bias: Another potential issue with collecting data in machine learning production is the potential for bias. If the data you are collecting is not representative of the population you are trying to model, your models may be biased and produce inaccurate results. It is important to be aware of this and take steps to ensure that your data is representative and unbiased.
 
-__Labeling Data__
+<a name="labeling-data"></a>
+
+[__Labeling Data__](#machine-learning-data-lifecycle-in-production)
 
 There are several advantages to labeling data in machine learning production:
 1. Improved model accuracy: One of the main advantages of labeling data in machine learning production is that it allows you to improve the accuracy of your models. By providing explicit labels for the data, you can train your models to accurately classify or predict outcomes for new cases.
@@ -279,7 +294,9 @@ However, there are also some disadvantages to labeling data in machine learning 
 2. Human error: Another potential issue with labeling data is the potential for human error. If the data is not labeled accurately, it can negatively impact the performance of your models. It is important to have processes in place to ensure the accuracy of your labels.
 3. Limited generalizability: Finally, it is important to keep in mind that labeled data is only representative of the specific cases it includes. Your models may not generalize well to new cases that are not included in the labeled data. This can be a significant disadvantage if you are working on tasks that require your models to generalize to a wide range of cases.
 
-__Validating data__
+<a name="validating-data"></a>
+
+[__Validating data__](#machine-learning-data-lifecycle-in-production)
 
 There are several advantages to validating data in machine learning production:
 1. Improved model accuracy: One of the main advantages of validating data in machine learning production is that it allows you to improve the accuracy of your models. By testing your models on unseen data, you can ensure that they are not overfitting to the training data and can generalize well to new cases.
@@ -293,11 +310,15 @@ However, there are also some disadvantages to validating data in machine learnin
 
 ### Week 2: Feature Engineering, Transformation, and Selection
 
-__Feature Engineering__
+<a name="feature-engineering"></a>
+
+[__Feature Engineering__](#machine-learning-data-lifecycle-in-production)
 
 Feature engineering is the process of creating and selecting features to use in a machine-learning model to improve model performance.
 
-__Preprocessing__
+<a name="preprocessing"></a>
+
+[__Preprocessing__](#machine-learning-data-lifecycle-in-production)
 
 Preprocessing in machine learning refers to the steps taken to prepare data for use in a machine learning model. Preprocessing usually involves cleaning and formatting the data in a way that is suitable for training the model, as well as selecting and extracting features from the data that are most relevant to the task at hand.
 
@@ -311,15 +332,21 @@ Many different preprocessing techniques can be used, depending on the nature of 
 
 Preprocessing is an important step in the machine learning process, as it can significantly impact the performance and accuracy of the trained model. It is important to carefully consider which preprocessing steps are appropriate for the specific data and task at hand.
 
-__Feature Transformations at Scale__
+<a name="feature-transformations-at-scale"></a>
+
+[__Feature Transformations at Scale__](#machine-learning-data-lifecycle-in-production)
 
 ![Feature Transformations](Images/Transformations.png)
 
-__Analyzers Framework__
+<a name="analyzers-framework"></a>
+
+[__Analyzers Framework__](#machine-learning-data-lifecycle-in-production)
 
 ![Analyzers Framework](Images/Analyzers%20framework.png)
 
-__tf.Transform__
+<a name="tf-transform"></a>
+
+[__tf.Transform__](#machine-learning-data-lifecycle-in-production)
 
 ```python
 import tensorflow as tf
@@ -336,7 +363,9 @@ for features in preprocessed_data:
   print(features)
 ```
 
-__Feature Selection__
+<a name="feature-selection"></a>
+
+[__Feature Selection__](#machine-learning-data-lifecycle-in-production)
 
 Feature selection is the process of selecting a subset of relevant features for use in model construction. It is a crucial step in the process of building a machine learning model, as the performance of the model can depend heavily on the chosen features.
 
