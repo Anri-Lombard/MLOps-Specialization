@@ -384,23 +384,25 @@ Some methods used are:
 
 ### Week 3: Data Journey and Data Storage
 
-__Data Journey__
+
+
+[__Data Journey__](#machine-learning-data-lifecycle-in-production)
 
 ![Data Journey](Images/Data%20journey.png)
 
-__Data Provenance/Lineage__
+[__Data Provenance/Lineage__](#machine-learning-data-lifecycle-in-production)
 
 Data provenance in machine learning refers to the process of tracking the origin and processing of data used in machine learning models. It involves keeping a record of the data sources, data transformations and preprocessing steps, and any other relevant information about the data to understand its quality and characteristics, which can significantly affect the performance of a machine learning model. Data provenance is important in situations where the results of a machine learning model are being used for decision-making or other critical applications, as it provides a clear understanding of the data that was used to generate the model's predictions and the process by which the model was trained and evaluated. Tools such as data lineage tools and data dictionaries can be used to track and document data provenance.
 
-__Metadata__
+[__Metadata__](#machine-learning-data-lifecycle-in-production)
 
 Machine learning metadata refers to the data about the data that is used in machine learning models. It includes information such as the data sources, data preprocessing steps, feature engineering techniques, and any other relevant information about the data. Machine learning metadata is important for understanding the characteristics and quality of the data that is being used to train and evaluate a machine learning model. It can also be useful for reproducing the results of a machine learning model, as it provides a record of the data and techniques that were used to generate the model. Machine learning metadata can be tracked using tools such as data dictionaries and data lineage tools.
 
-__Feature Stores__
+[__Feature Stores__](#machine-learning-data-lifecycle-in-production)
 
 In machine learning, a feature store is a centralized repository for storing and managing features that are used as input variables in the training, evaluation, and serving of machine learning models. A feature store enables data scientists and machine learning engineers to store, manage, and version control their features in a central location, making it easier to reuse and share features across different projects and teams. It also provides tools for pre-processing and transforming raw data into features that are ready for use in machine learning pipelines, improving the quality and performance of machine learning models. By facilitating collaboration and reducing duplication of effort, a feature store can greatly simplify the process of building and deploying machine learning models.
 
-__Data Warehouse__
+[__Data Warehouse__](#machine-learning-data-lifecycle-in-production)
 
 In machine learning, a data warehouse is a centralized repository for storing and managing large amounts of structured data that is used for reporting and data analysis. Data warehouses are designed to support the efficient querying and analysis of data and are typically optimized for fast query performance through the use of specialized indexing and query optimization techniques. Data warehouses can be used to store data from a variety of sources, including transactional databases, log files, and streaming data, and can support both batch and real-time data ingestion and processing. Data warehouses are often used in machine learning as a source of historical data for training and evaluating machine learning models, as well as for storing and querying the results of machine learning predictions in production.
 
