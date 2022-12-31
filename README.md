@@ -82,7 +82,9 @@ Over time the tiny goals add up to completion and the imagery will result in sur
     - [Model Interpretation Techniques](#model-interpretation-techniques)
     - [SHAP](#shap)
     - [LIME](#lime)
-1. Deploying Machine Learning Models in Production
+4. <a name="deploying-machine-learning-models-in-production"></a>Deploying Machine Learning Models in Production
+  * Week 1
+    - [Serving Models](#serving-models)
 
 ## Course 1: Introduction to Machine Learning in Production
 ### Week 1: Overview of the ML Lifecycle and Deployment
@@ -734,7 +736,9 @@ LIME is a useful tool for understanding the behavior of complex machine learning
 ## Course 4: Deploying Machine Learning Models in Production
 ### Week 1: Model Serving Introduction
 
-__Serving models__
+<a name="serving-models"></a>
+
+[__Serving models__](#deploying-machine-learning-models-in-production)
 
 In the context of machine learning production, serving a model typically refers to the process of deploying a trained machine learning model so that it can be used to make predictions on new data. This can be done in many ways, depending on the specific needs of the project.
 
@@ -744,7 +748,7 @@ Another way to serve a machine learning model is to package it as a standalone e
 
 Regardless of the specific approach used, the goal of serving a machine learning model is to make it easy to use and integrate into various systems and processes, so that it can be used to solve real-world problems and add value to an organization.
 
-__Metrics__
+[__Metrics__](#deploying-machine-learning-models-in-production)
 
 Latency refers to the time it takes for a machine learning model to generate a prediction in response to a request. Low latency is generally desirable when serving a machine learning model, as it means that predictions can be generated quickly and users will experience a fast response time.
 
@@ -754,7 +758,7 @@ Throughput refers to the number of predictions that a machine learning model can
 
 These metrics are often used to measure the performance of a machine learning model when it is being served in a production environment. By monitoring these metrics, organizations can understand how well the model is performing and identify any bottlenecks or issues that need to be addressed.
 
-__Serving Infrastructure__
+[__Serving Infrastructure__](#deploying-machine-learning-models-in-production)
 
 here are a number of different infrastructure options that can be used to serve machine learning models in production. Some common approaches include:
 
@@ -765,7 +769,7 @@ here are a number of different infrastructure options that can be used to serve 
 
 Each of these approaches has its own set of trade-offs and may be more or less suitable for different use cases. Organizations will need to consider factors like the scale and complexity of the model, the resources required to serve it, and the requirements of the application or system in which it will be used when deciding on the best infrastructure for serving their machine learning models.
 
-__Optimizing metrics and satisficing metrics__
+[__Optimizing metrics and satisficing metrics__](#deploying-machine-learning-models-in-production)
 
 Accuracy, precision, and recall are all performance metrics that can be used to evaluate the quality of a machine learning model.
 
@@ -785,7 +789,7 @@ GPU (Graphics Processing Unit) load refers to the amount of computational resour
 
 Optimizing these metrics can involve a variety of techniques, such as reducing the number of parameters in a model, using more efficient algorithms, or using techniques like pruning or quantization to reduce model size. Ultimately, the specific techniques used will depend on the specific needs of the project and the trade-offs that are acceptable.
 
-__Deployment Options__
+[__Deployment Options__](#deploying-machine-learning-models-in-production)
 
 There are a number of different deployment options that can be used for model serving, depending on the specific needs of the project. Some common options include:
 
@@ -797,7 +801,7 @@ The specific deployment option chosen will depend on the requirements of the pro
 
 ### Week 2: Model Serving Patterns and Infrastructure
 
-__Container Orchestration__
+[__Container Orchestration__](#deploying-machine-learning-models-in-production)
 
 Container orchestration is the process of managing and coordinating multiple containers, typically in a cluster of machines. In the context of machine learning model production, container orchestration can be used to manage the deployment and scaling of machine learning models, as well as the underlying infrastructure and resources needed to support them.
 
@@ -812,7 +816,7 @@ There are several benefits to using container orchestration in machine learning 
 
 Overall, container orchestration can be a valuable tool for managing machine learning models in production, allowing you to deploy and scale your models efficiently and reliably.
 
-__Inference Optimization__
+[__Inference Optimization__](#deploying-machine-learning-models-in-production)
 
 Inference optimization refers to the process of improving the performance of a machine learning model during the inference stage, when the model is being used to make predictions on new data. There are several ways to optimize inference, including optimizing the model infrastructure, the model architecture, and the model compilation.
 
@@ -820,7 +824,7 @@ Inference optimization refers to the process of improving the performance of a m
 2. Model architecture: The architecture of the model itself can also impact inference performance. Some common techniques for optimizing model architecture include pruning and quantization. Pruning involves removing unnecessary connections or weights from the model to reduce its size and complexity, while quantization involves reducing the precision of the model's weights and activations to reduce the amount of memory and computational resources required.
 3. Model compilation: The process of compiling a model can also impact its performance during inference. For example, optimizing the compilation flags or using just-in-time (JIT) compilation can help improve the performance of the model.
 
-__Data Preprocessing__
+[__Data Preprocessing__](#deploying-machine-learning-models-in-production)
 
 Data preprocessing refers to the process of preparing raw data for use in a machine learning model. It involves a number of steps that are designed to improve the quality and usability of the data, and to make it more suitable for training a model. Some common steps in data preprocessing include:
 
@@ -830,7 +834,7 @@ Data preprocessing refers to the process of preparing raw data for use in a mach
 4. Representation transformation: This involves transforming the data into a different representation that is more suitable for training a machine learning model. For example, text data may need to be converted into numerical vectors using techniques such as tokenization and embedding.
 5. Feature selection: This involves selecting a subset of the most relevant and useful features from the data for use in the model. It can be used to reduce the complexity of the model and improve its performance by removing unnecessary or redundant features.
 
-__ETL Pipelines__
+[__ETL Pipelines__](#deploying-machine-learning-models-in-production)
 
 ETL stands for Extract, Transform, and Load. An ETL pipeline is a set of processes that extracts data from one or more sources, transforms it into a format suitable for downstream analysis or machine learning, and loads it into a target destination, such as a data warehouse, database, or machine learning model.
 
@@ -844,11 +848,11 @@ ETL pipelines are commonly used in data analytics and machine learning to extrac
 
 ### Week 3: Model Management and Delivery
 
-__MLOps__
+[__MLOps__](#deploying-machine-learning-models-in-production)
 
 ![MLOps cycle](Images/MLOps.png)
 
-__Experiment Tracking__
+[__Experiment Tracking__](#deploying-machine-learning-models-in-production)
 
 In machine learning operations (MLOps), experiment tracking refers to the process of keeping track of the various experiments or trials that are conducted during the development of a machine learning model. This includes logging key details about each experiment, such as the specific algorithms or techniques used, the input data and parameters, and the output metrics and results.
 
@@ -856,7 +860,7 @@ Experiment tracking helps to ensure that the model development process is organi
 
 There are several tools and platforms available for experiment tracking in MLOps, including open source options like Comet.ml and Weights & Biases, and commercial solutions like H20.ai and DVC. These tools typically provide features such as automatic logging of experiment details, visualization and comparison of experiment results, and collaboration and sharing capabilities.
 
-__Tools For Data Versioning__
+[__Tools For Data Versioning__](#deploying-machine-learning-models-in-production)
 
 There are several tools available for data versioning, which is the process of tracking changes to data over time and storing multiple versions of data for reference or comparison. Some of the tools for data versioning include:
 
@@ -869,7 +873,7 @@ There are several tools available for data versioning, which is the process of t
 
 These tools can be useful for managing data versioning and collaboration in data science and machine learning projects, as they allow team members to track changes to data and models, compare different versions, and reproduce past results.
 
-__Bridging ML and IT with MLOps__
+[__Bridging ML and IT with MLOps__](#deploying-machine-learning-models-in-production)
 
 Continuous integration (CI) is a software development practice in which code changes are automatically built, tested, and merged into a shared repository as they are committed. The goal of CI is to identify and fix errors as quickly as possible, by running automated tests and builds on a regular basis.
 
@@ -879,7 +883,7 @@ Continuous training is a machine learning practice in which a machine learning m
 
 These practices can be used together to enable a continuous integration, delivery, and training workflow for machine learning projects. In such a workflow, new data is automatically collected and incorporated into the training set, and the model is automatically retrained and deployed to production as needed. This can help to ensure that the machine learning model is always up to date and performing at its best.
 
-__ML Solution Lifecycle__
+[__ML Solution Lifecycle__](#deploying-machine-learning-models-in-production)
 
 The machine learning (ML) solution lifecycle refers to the series of steps involved in developing, deploying, and maintaining a machine learning model. These steps typically include:
 
@@ -891,7 +895,7 @@ The machine learning (ML) solution lifecycle refers to the series of steps invol
 
 This is a general outline of the ML solution lifecycle, and the specific steps and activities involved may vary depending on the specific problem and use case. However, these are the key stages that are typically involved in developing and deploying a machine learning model.
 
-__MLOps levels 1, 2, and 3__
+[__MLOps levels 1, 2, and 3__](#deploying-machine-learning-models-in-production)
 
 MLOps is a set of practices and tools for managing the entire machine learning (ML) lifecycle, from development to deployment and maintenance. MLOps can be divided into different levels based on the degree of automation and integration that is achieved:
 
@@ -903,7 +907,7 @@ Level 2: MLOps level 2 involves fully automating the entire ML lifecycle, from d
 
 At each level, the goal is to optimize the ML lifecycle for efficiency, reliability, and agility, and to enable data scientists and machine learning engineers to focus on the tasks that are most important to the business. However, achieving higher levels of MLOps typically requires a greater investment in automation, integration, and infrastructure, and may require more resources and expertise.
 
-__Model Registry__
+[__Model Registry__](#deploying-machine-learning-models-in-production)
 
 A model registry is a central repository for storing, organizing, and managing machine learning models throughout their lifecycle. It provides a single source of truth for the various versions and iterations of a model, as well as metadata and documentation about each model.
 
@@ -922,7 +926,7 @@ There are several tools available for creating and managing model registries, in
 These tools can be useful for managing the model registry and deployment process in machine learning projects, by providing a central location for storing and managing models, and by enabling automation and integration with other parts of the ML lifecycle.
 
 
-__Continuous Integration vs Progressive Integration__
+[__Continuous Integration vs Progressive Integration__](#deploying-machine-learning-models-in-production)
 
 Continuous integration (CI) is a software development practice in which code changes are automatically built, tested, and merged into a shared repository as they are committed. The goal of CI is to identify and fix errors as quickly as possible, by running automated tests and builds on a regular basis.
 
@@ -936,7 +940,7 @@ There are several key differences between continuous integration and progressive
 
 Overall, continuous integration is a more rapid and agile approach to software development, while progressive integration is a more controlled and incremental approach. The choice between the two approaches will depend on the specific needs and constraints of the project, as well as the team's level of experience and expertise.
 
-__Progressive Delivery__
+[__Progressive Delivery__](#deploying-machine-learning-models-in-production)
 
 Progressive delivery is a software development practice in which code changes are released to users in a controlled and incremental manner, rather than being released all at once to the entire user base. The goal of progressive delivery is to reduce the risk of introducing errors or breaking changes into the codebase, and to allow for more fine-grained control over the release process.
 
@@ -948,7 +952,7 @@ Several processes can be used as part of a progressive delivery workflow, includ
 
 These processes can be used to implement a progressive delivery workflow, by releasing code changes to small groups of users and collecting data on their effectiveness, and then using this data to guide the rollout of the changes to the rest of the user base. This can help to reduce the risk of introducing errors or breaking changes, and to optimize the release process for the specific needs and goals of the project.
 
-__Blue/Green Deployment and Canary Deployment__
+[__Blue/Green Deployment and Canary Deployment__](#deploying-machine-learning-models-in-production)
 
 Blue/green deployment and canary deployment are two techniques for safely releasing code changes to a production environment. Both techniques involve releasing code changes to a small group of users initially, and then gradually rolling out the changes to the rest of the user base based on the results.
 
@@ -960,7 +964,7 @@ Both blue/green deployment and canary deployment are useful for reducing the ris
 
 ### Week 4: Model Monitoring and Logging
 
-__Monitoring matters__
+[__Monitoring matters__](#deploying-machine-learning-models-in-production)
 
 Monitoring matters in MLOps (machine learning operations) for several reasons, including data skews, model staleness, and negative feedback loops.
 
@@ -970,7 +974,7 @@ Monitoring matters in MLOps (machine learning operations) for several reasons, i
 
 Overall, monitoring is a crucial part of MLOps because it helps ensure that the machine learning model is performing well and producing accurate predictions. By monitoring data skews, model staleness, and negative feedback loops, organizations can identify and address issues that may be affecting the model's performance and improve the quality of their machine learning systems.
 
-__Functional and non-functional monitoring__
+[__Functional and non-functional monitoring__](#deploying-machine-learning-models-in-production)
 
 In MLOps (machine learning operations), functional and non-functional monitoring refer to the types of monitoring activities that are performed on machine learning models and systems.
 
@@ -978,7 +982,7 @@ Functional monitoring refers to monitoring the performance and accuracy of the m
 
 Non-functional monitoring refers to monitoring the performance and reliability of the overall machine learning system, including the infrastructure, data pipelines, and processes involved in deploying and maintaining the model. This might include monitoring the availability and performance of the infrastructure, tracking the quality and correctness of the data being used to train and test the model, and monitoring the performance and efficiency of the processes involved in deploying and maintaining the model. Non-functional monitoring is important because it helps ensure that the machine learning system is stable, reliable, and efficient.
 
-__Observability__
+[__Observability__](#deploying-machine-learning-models-in-production)
 
 In MLOps (machine learning operations) monitoring, observability refers to the ability to understand the state of a machine learning system and its underlying components by collecting and analyzing data about its behavior.
 
@@ -991,7 +995,7 @@ To achieve observability in MLOps monitoring, organizations typically need to im
 3. Tracing: Tracing the execution of the machine learning system, including the data flow and the processing of requests, can help organizations understand how the system is functioning and identify any bottlenecks or issues.
 4. Alerting: Setting up alerts to notify organizations when certain thresholds or conditions are met can help them quickly identify and respond to issues or problems with the machine learning system.
 
-__Logging, Distribution Tracing, and Dapper-style Tracing__
+[__Logging, Distribution Tracing, and Dapper-style Tracing__](#deploying-machine-learning-models-in-production)
 
 Logging, distribution tracing, and Dapper-style tracing are three techniques that can be used to achieve observability in MLOps (machine learning operations) monitoring.
 
@@ -999,7 +1003,7 @@ Logging, distribution tracing, and Dapper-style tracing are three techniques tha
 2. Distribution tracing: Distribution tracing is a technique that allows organizations to trace the flow of requests through a distributed system, such as a machine learning system that involves multiple microservices or components. By tracing the flow of requests, organizations can understand how the system is functioning and identify any bottlenecks or issues.
 3. Dapper-style tracing: Dapper-style tracing is a type of distributed tracing that was developed at Google and is based on the principles of the Dapper paper. It involves collecting detailed trace data about the execution of a distributed system and using this data to understand how the system is functioning and identify any issues or problems. Dapper-style tracing typically involves collecting data about the flow of requests through the system, as well as data about the performance of the system's components.
 
-__Model decay__
+[__Model decay__](#deploying-machine-learning-models-in-production)
 
 Model decay is the phenomenon in which a machine learning model's performance declines over time. This can occur for several reasons, including data decay and concept drift.
 
@@ -1010,7 +1014,7 @@ To address model decay, organizations often implement a model retraining policy,
 
 Implementing a model retraining policy can help organizations ensure that their machine learning models remain accurate and continue to perform well over time. By retraining the model regularly and using fresh data, organizations can mitigate the effects of data decay and concept drift and keep the model's performance from declining.
 
-__Responsible AI and Human-centered Design__
+[__Responsible AI and Human-centered Design__](#deploying-machine-learning-models-in-production)
 
 Responsible AI refers to the practice of developing and deploying artificial intelligence systems in a way that is ethical, transparent, and accountable. Human-centered design is an approach to designing AI systems that puts the needs and well-being of people at the center of the design process.
 
@@ -1021,22 +1025,22 @@ There are several reasons why human-centered design is important in the context 
 3. Fostering trust: Human-centered design can help foster trust in AI systems by considering the needs and concerns of people who will be interacting with the system. This can help build confidence in the AI system and encourage its adoption.
 4. Ensuring accountability: Human-centered design can help ensure accountability in AI systems by considering the impacts of the system on different groups of people. This can help identify any unintended consequences of the AI system and take steps to address them.
 
-__GDPR and CCPA__
+[__GDPR and CCPA__](#deploying-machine-learning-models-in-production)
 
 - GDPR: The GDPR is a data protection law that applies to organizations that process the personal data of individuals in the European Union (EU). It sets out strict requirements for the collection, use, and storage of personal data, and gives individuals in the EU certain rights with respect to their personal data. These rights include the right to be informed about how their personal data is being used, the right to access their personal data, and the right to have their personal data erased in certain circumstances. Organizations that violate the GDPR can be subject to fines and other penalties.
 - CCPA: The CCPA is a data privacy law that applies to organizations that collect and process the personal data of consumers in California. It gives California consumers certain rights with respect to their personal data, including the right to know what personal data an organization has collected about them, the right to request that their personal data be deleted, and the right to opt out of the sale of their personal data. The CCPA also imposes certain obligations on organizations that collect and process personal data, including the requirement to provide a clear and conspicuous link on their website to an opt-out page.
 
-__Cryptography and Differential Privacy__
+[__Cryptography and Differential Privacy__](#deploying-machine-learning-models-in-production)
 
 - Cryptography: Cryptography is the practice of using mathematical techniques to secure communication and data. It involves the use of algorithms to encode (encrypt) data so that it can be transmitted securely and decoded (decrypted) only by those who have the appropriate keys or credentials. Cryptography is often used to protect data from unauthorized access or tampering, and it can be used to secure data in transit (e.g., when it is being transmitted over the internet) or at rest (e.g., when it is stored on a server).
 - Differential privacy: Differential privacy is a technique that can be used to protect the privacy of individuals when their data is being collected, used, or shared. It involves adding noise (random variations) to the data in a way that preserves the overall statistical properties of the data, but makes it difficult to identify or infer information about specific individuals. Differential privacy can be used to protect the privacy of individuals when data is being collected from them (e.g., through surveys or online forms), or when data about them is being shared or analyzed (e.g., through data analytics or machine learning).
 
-__Anonymisation and Pseudonymisation__
+[__Anonymisation and Pseudonymisation__](#deploying-machine-learning-models-in-production)
 
 - Anonymization: Anonymization is the process of removing or obscuring personal identifying information from data in a way that makes it impossible to identify specific individuals. Anonymization can be achieved through techniques such as aggregation (combining data from multiple individuals), suppression (removing identifying information from the data), or perturbation (adding noise or random variations to the data). Anonymized data can be used for a wide range of purposes, including research, analytics, and machine learning, without compromising the privacy of individuals.
 - Pseudonymization: Pseudonymization is the process of replacing personal identifying information in data with pseudonyms (fake names) or other identifying codes. Pseudonymized data can be used for a wide range of purposes, including research, analytics, and machine learning, while still preserving the privacy of individuals. However, pseudonymized data can potentially be re-identified if the pseudonyms or identifying codes can be linked back to specific individuals. As a result, pseudonymized data is often considered less private than anonymized data.
 
-__Right to be forgotten and the right to rectification__
+[__Right to be forgotten and the right to rectification__](#deploying-machine-learning-models-in-production)
 
 - Right to be forgotten: The right to be forgotten, also known as the right to erasure, is the right of an individual to have their personal data erased in certain circumstances. This right is recognized in laws such as the General Data Protection Regulation (GDPR) and the California Consumer Privacy Act (CCPA). The right to be forgotten applies when the personal data is no longer necessary for the purpose for which it was collected, when the individual withdraws their consent for the data to be processed, or when the processing of the data is unlawful.
 - Right to rectification: The right to rectification is the right of an individual to have their personal data corrected or updated if it is inaccurate or incomplete. This right is recognized in laws such as the GDPR and the CCPA. The right to rectification applies when an individual becomes aware that their personal data is inaccurate or incomplete and requests that it be corrected or updated.
